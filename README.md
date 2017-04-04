@@ -18,7 +18,7 @@ listing prices, years built, distances to the given location, etc.
 - What nearby properties are currently on the market for rent and what are their
 attributes, such as numbers of bedroom and bathroom, sizes of living space, rental rates, distances to the given location, etc.
 
-##### The following further clarifies the requirements for the project.
+#### The following further clarifies the requirements for the project.
 
 - You decide what free data sources and what data to use. However, the access to the data must be free. If a website offers a limited time (such as 30 days) free trial, and charges a fee afterwards, this is not a free source and do not use it in your project.
 - If a data source requires you to create a free account in order to access its data, you can use the data source.
