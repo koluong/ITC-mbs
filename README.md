@@ -7,28 +7,28 @@ Before you move to a new place, it would be useful to know the neighborhood, and
 ### Requirements
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, you develop a mashup web application that uses a location, such as an address, as input, combines information from different free sources, and displays various results which may include but are not limited the following:
 
-```
-• What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
-• How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
-• How safe is this area, such as crime-related information?
-• What is the weather in the next few days and year around?
-• What nearby properties are currently on the market for sale and what are their
+
+- What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
+- How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
+- How safe is this area, such as crime-related information?
+- What is the weather in the next few days and year around?
+- What nearby properties are currently on the market for sale and what are their
 attributes, such as numbers of bedroom and bathroom, sizes of living space, lot sizes,
 listing prices, years built, distances to the given location, etc.
-• What nearby properties are currently on the market for rent and what are their
+- What nearby properties are currently on the market for rent and what are their
 attributes, such as numbers of bedroom and bathroom, sizes of living space, rental rates, distances to the given location, etc.
-```
+
 The following further clarifies the requirements for the project.
-```
-• You decide what free data sources and what data to use. However, the access to the data must be free. If a website offers a limited time (such as 30 days) free trial, and charges a fee afterwards, this is not a free source and do not use it in your project.
-• If a data source requires you to create a free account in order to access its data, you can use the data source.
-• If a data source provides free but limited access, such as less than 1000 visits per day, this is ok to use the data source.
-• In order for users to better understand the data (including longitudinal data), you choose appropriate ways, such as tables, graphs, pictures, and maps, to display the results.
-• If a data source disallows users to store its data in a local database or data files, then do not store its data locally.
-• You choose your preferred technologies to implement the project.
+
+- You decide what free data sources and what data to use. However, the access to the data must be free. If a website offers a limited time (such as 30 days) free trial, and charges a fee afterwards, this is not a free source and do not use it in your project.
+- If a data source requires you to create a free account in order to access its data, you can use the data source.
+- If a data source provides free but limited access, such as less than 1000 visits per day, this is ok to use the data source.
+- In order for users to better understand the data (including longitudinal data), you choose appropriate ways, such as tables, graphs, pictures, and maps, to display the results.
+- If a data source disallows users to store its data in a local database or data files, then do not store its data locally.
+- You choose your preferred technologies to implement the project.
 1
-• The score of a project is mainly determined by the mashup’s usefulness (which can be measured by features provided) and user experience (which can be measured by ease of use and the visual design).
-```
+- The score of a project is mainly determined by the mashup’s usefulness (which can be measured by features provided) and user experience (which can be measured by ease of use and the visual design).
+
 
 ## Deliverables
 
