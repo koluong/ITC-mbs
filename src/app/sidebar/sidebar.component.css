@@ -1,0 +1,7 @@
+.col-xs-3 {
+  height: 100vh;
+  border: 1px solid gray;
+}
+#sidebar {
+  height: 100%;
+}
