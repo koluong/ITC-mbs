@@ -15,6 +15,7 @@ export class WeatherExpandComponent implements OnInit {
               private navService: NavigationService) { }
 
   ngOnInit() {
+
   }
 
   onClose() {
