@@ -1,4 +1,8 @@
 .col-xs-9 {
   height: 100vh;
   background: lightblue;
+  box-shadow: inset 10px 0 38px -20px rgba(0,0,0,0.30);
+}
+
+.col-xs-3{
 }

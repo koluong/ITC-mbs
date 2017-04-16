@@ -1,17 +1,27 @@
-<div class="card">
-  <div class="row header">
-    <div class="col-xs-12">
-      <h4>Weather</h4>
-    </div>
+<div id="card">
+  <div class="row">
+      <h3>Weather</h3>
   </div>
   <div class="row content">
+    <div
+      class="col-xs-3"
+      *ngFor="let data of dailyData">
+        <img
+        src="{{ this.iconSource }}{{data.icon}}.png"
+        alt="">
+      <br>
+        <span>
+          {{ data.temperatureMax | number: '1.0-0' }}&deg; |
+          {{ data.temperatureMin | number: '1.0-0' }}&deg;
+        </span>
+    </div>
     <div class="col-xs-2 col-xs-offset-10">
       <button
         type="button"
         (click)="onExpand()"
         class="btn btn-link"
         [disabled]="inExpandedView">
-        <span class="glyphicon glyphicon-menu-right"></span>
+        <span class="fa fa-angle-right fa-4x" style="color: #95989A;"></span>
       </button>
     </div>
   </div>

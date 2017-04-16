@@ -11,6 +11,7 @@ import { WeatherPreviewComponent } from './weather/weather-preview.component';
 import { WeatherExpandComponent } from './weather/weather-expand/weather-expand.component';
 
 import { NavigationService } from './shared/navigation.service';
+import { WeatherService } from './weather/weather.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { NavigationService } from './shared/navigation.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [NavigationService],
+  providers: [NavigationService, WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
