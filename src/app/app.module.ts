@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from 'angular2-google-maps/core';
@@ -37,10 +37,12 @@ import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/res
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ'
+      apiKey: 'AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ',
+      libraries: ["places"]
     })
   ],
   providers: [NavigationService, WeatherService],

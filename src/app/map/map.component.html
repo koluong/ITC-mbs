@@ -1,9 +1,20 @@
 <div class="row">
   <app-sidebar></app-sidebar>
   <div class="col-xs-9">
+      <div class="form-group">
+        <input
+          placeholder="Search Leaf Map"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="off"
+          type="text"
+          class="form-control"
+          #search
+          [formControl]="searchControl">
+      </div>
       <router-outlet></router-outlet>
-      <sebm-google-map [latitude]="lat" [longitude]="lng">
-        <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+      <sebm-google-map [latitude]="latitude" [longitude]="longitude" [zoom]="15">
+        <sebm-google-map-marker [latitude]="latitude" [longitude]="longitude"></sebm-google-map-marker>
       </sebm-google-map>
   </div>
 </div>
