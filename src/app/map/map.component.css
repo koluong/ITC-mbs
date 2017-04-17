@@ -1,0 +1,14 @@
+.col-xs-9 {
+  height: 100vh;
+  padding: 0;
+}
+.sebm-google-map {
+  position: fixed;
+}
+.sebm-google-map-container {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
