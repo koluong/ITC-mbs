@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from 'angular2-google-maps/core';
@@ -19,6 +19,7 @@ import { SchoolsComponent } from './schools/schools.component';
 import { CrimeExpandComponent } from './crime/crime-expand/crime-expand.component';
 import { SchoolsExpandComponent } from './schools/schools-expand/schools-expand.component';
 import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/restaurants-expand.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,15 +33,18 @@ import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/res
     SchoolsComponent,
     CrimeExpandComponent,
     SchoolsExpandComponent,
-    RestaurantsExpandComponent
+    RestaurantsExpandComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ'
+      apiKey: 'AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ',
+      libraries: ["places"]
     })
   ],
   providers: [NavigationService, WeatherService],
