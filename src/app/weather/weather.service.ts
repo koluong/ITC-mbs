@@ -21,7 +21,6 @@ export class WeatherService {
 
   weatherData: {};
 
-
   constructor(private http: Http,
               private navService: NavigationService) {
               this.setCoordsSubscription();
