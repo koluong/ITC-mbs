@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { NavigationService } from '../../shared/navigation.service';
+import { WeatherService } from '../weather.service';
 
 @Component({
   selector: 'app-weather-expand',
@@ -10,9 +11,11 @@ import { NavigationService } from '../../shared/navigation.service';
 })
 export class WeatherExpandComponent implements OnInit {
 
+
   constructor(private route: ActivatedRoute,
               private router: Router,
-              private navService: NavigationService) { }
+              private navService: NavigationService,
+              private weatherService: WeatherService) { }
 
   ngOnInit() {
 

@@ -1,8 +1,14 @@
 .col-xs-9 {
   height: 100vh;
-  background: lightblue;
-  box-shadow: inset 10px 0 38px -20px rgba(0,0,0,0.30);
+  padding: 0;
 }
-
-.col-xs-3{
+.sebm-google-map {
+  position: fixed;
+}
+.sebm-google-map-container {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
