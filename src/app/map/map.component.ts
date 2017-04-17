@@ -6,6 +6,8 @@ import {
   ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MapsAPILoader } from 'angular2-google-maps/core';
+
+import { NavigationService } from '../shared/navigation.service';
 import {} from '@types/googlemaps';
 
 @Component({
@@ -14,16 +16,17 @@ import {} from '@types/googlemaps';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  public latitude: number = 51.5033640;
-  public longitude: number = -0.1276250;
-  public searchControl: FormControl;
-  public zoom: number;
+  latitude: number = 51.5033640;
+  longitude: number = -0.1276250;
+  searchControl: FormControl;
+  zoom: number = 15;
 
   @ViewChild('search') public searchElementRef: ElementRef;
 
 
   constructor(private mapsAPILoader: MapsAPILoader,
-    private ngZone: NgZone) { }
+              private ngZone: NgZone,
+              private navService: NavigationService) { }
 
   ngOnInit() {
 
@@ -46,7 +49,11 @@ export class MapComponent implements OnInit {
           //set latitude, longitude and zoom
           this.latitude = place.geometry.location.lat();
           this.longitude = place.geometry.location.lng();
-          this.zoom = 12;
+          this.zoom = 15;
+
+          this.navService.setNewCoordinates(
+                place.geometry.location.lat(), 
+                place.geometry.location.lng());
         });
       });
     });

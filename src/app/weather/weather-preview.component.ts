@@ -16,10 +16,8 @@ export class WeatherPreviewComponent implements OnInit, OnDestroy {
   inExpandedView: string;
   subscription: Subscription;
   weatherSubscription: Subscription;
+  coordsSubscription: Subscription;
   dailyData: {};
-  conditionData: string;
-  tempData: number;
-
   iconSource = "../../assets/weather-icons/";
 
   constructor(private route: ActivatedRoute,
@@ -31,6 +29,15 @@ export class WeatherPreviewComponent implements OnInit, OnDestroy {
     this.subscription = this.navService.whichExpandedView
       .subscribe(
         (view: string) => this.inExpandedView = view
+      );
+
+    this.coordsSubscription = this.weatherService.weatherDataFetched
+      .subscribe(
+        (data) => {
+          data = '';
+          this.loadWeatherData();
+        },
+        err => console.log(err)
       );
 
     this.loadWeatherData();

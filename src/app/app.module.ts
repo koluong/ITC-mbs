@@ -19,6 +19,7 @@ import { SchoolsComponent } from './schools/schools.component';
 import { CrimeExpandComponent } from './crime/crime-expand/crime-expand.component';
 import { SchoolsExpandComponent } from './schools/schools-expand/schools-expand.component';
 import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/restaurants-expand.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/res
     SchoolsComponent,
     CrimeExpandComponent,
     SchoolsExpandComponent,
-    RestaurantsExpandComponent
+    RestaurantsExpandComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
