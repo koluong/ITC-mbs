@@ -13,7 +13,7 @@ import { WeatherService } from './weather.service';
 })
 
 export class WeatherPreviewComponent implements OnInit, OnDestroy {
-  inExpandedView = false;
+  inExpandedView: string;
   subscription: Subscription;
   weatherSubscription: Subscription;
   dailyData: {};
@@ -28,9 +28,9 @@ export class WeatherPreviewComponent implements OnInit, OnDestroy {
               private weatherService: WeatherService) {}
 
   ngOnInit() {
-    this.subscription = this.navService.inExpandedView
+    this.subscription = this.navService.whichExpandedView
       .subscribe(
-        (exView: boolean) => this.inExpandedView = exView
+        (view: string) => this.inExpandedView = view
       );
 
     this.loadWeatherData();
@@ -41,7 +41,7 @@ export class WeatherPreviewComponent implements OnInit, OnDestroy {
   }
   onExpand() {
     this.router.navigate(['/weather']);
-    this.navService.enterExpandedView();
+    this.navService.enterExpandedView('weather');
   }
 
   loadWeatherData() {

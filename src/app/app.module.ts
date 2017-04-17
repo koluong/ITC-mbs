@@ -13,6 +13,12 @@ import { WeatherExpandComponent } from './weather/weather-expand/weather-expand.
 
 import { NavigationService } from './shared/navigation.service';
 import { WeatherService } from './weather/weather.service';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { CrimeComponent } from './crime/crime.component';
+import { SchoolsComponent } from './schools/schools.component';
+import { CrimeExpandComponent } from './crime/crime-expand/crime-expand.component';
+import { SchoolsExpandComponent } from './schools/schools-expand/schools-expand.component';
+import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/restaurants-expand.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { WeatherService } from './weather/weather.service';
     SidebarComponent,
     MapComponent,
     WeatherPreviewComponent,
-    WeatherExpandComponent
+    WeatherExpandComponent,
+    RestaurantsComponent,
+    CrimeComponent,
+    SchoolsComponent,
+    CrimeExpandComponent,
+    SchoolsExpandComponent,
+    RestaurantsExpandComponent
   ],
   imports: [
     BrowserModule,

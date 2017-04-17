@@ -1,13 +1,13 @@
 import { Subject } from 'rxjs/Subject';
 
 export class NavigationService {
-  inExpandedView = new Subject<boolean>();
+  whichExpandedView = new Subject<string>();
 
-  enterExpandedView(){
-    this.inExpandedView.next(true);
+  enterExpandedView(string){
+    this.whichExpandedView.next(string);
   }
 
   exitExpandedView() {
-    this.inExpandedView.next(false);
+    this.whichExpandedView.next('');
   }
 }
