@@ -15,3 +15,31 @@ h3 {
 button[disabled]:hover {
   cursor: default;
 }
+.frame-square {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px;
+  width: 100px;
+  height: 100px;
+  margin-right: .5em;
+  margin-bottom: .3em;
+}
+.crop {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+  }
+}

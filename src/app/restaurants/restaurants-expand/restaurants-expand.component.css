@@ -1,25 +1,71 @@
-h3 {
-  padding-left: 10px;
+h2{
+  margin-top: 10px;
 }
 #content {
-  height: 90%;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+#expand-content {
+  height: 95%;
+  width: 65%;
   align-items: center;
   background: white;
   flex-grow: 1;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  margin: 20px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+  margin: 50px 20px 0 20px;
+  padding-left: 15px;
   z-index: 2;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#detail-content {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 .expanded-view {
   height: 100%;
-  width: 40%;
-  padding: 20px 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .glyphicon-remove {
   font-size: 20px;
   color: gray;
   margin-top: 10px;
+}
+.frame-square {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  padding: 0px;
+  width: 100px;
+  height: 100px;
+  margin-right: .5em;
+  margin-bottom: .3em;
+}
+.crop {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+  }
 }

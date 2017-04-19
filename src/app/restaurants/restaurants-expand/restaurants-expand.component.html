@@ -1,14 +1,45 @@
 <div class="expanded-view">
-  <div id="content">
-  <div class="row">
-    <div class="col-xs-10">
-      <h3>Expanded Restaurants</h3>
-    </div>
-    <div class="col-xs-2">
-      <a style="cursor: pointer;" (click)="onClose()">
-        <span class="fa fa-angle-double-left fa-4x" style="color: #95989A;"></span>
-      </a>
+  <div id="content" class="row">
+    <div id="expand-content" class="col-xs-4">
+      <div class="row">
+        <div class="col-xs-10">
+          <h2>More Restaurants</h2>
+        </div>
+        <div class="col-xs-2">
+          <a style="cursor: pointer; margin-right: -20px;" (click)="onClose()">
+            <span class="fa fa-angle-double-left fa-4x" style="color: #95989A;"></span>
+          </a>
+        </div>
+      </div>
+      <div
+        *ngFor="let data of restaurantData; let i = index">
+        <a (click)="onDetailOpen()" style="cursor: pointer; color: black">
+          <div class="row" style="padding: 10px;">
+              <div classs="col-xs-4">
+                <div class="frame-square">
+                <div class="crop">
+                  <img
+                    src="{{ this.photoCall }}{{ data.photos[0].photo_reference}}"
+                    alt="{{ data.name}}">
+                </div>
+              </div>
+              <div class="col-xs-8">
+                <p>
+                <b>{{ data.name }}</b><br>
+                {{data.vicinity }}<br>
+                {{ data.rating }}<br>
+                <span id="openText" *ngIf="data.opening_hours.open_now">Open</span>
+                <span id="closedText" *ngIf="!data.opening_hours.open_now">Closed</span>
+                </p>
+                  <hr>
+              </div>
+            </div>
+          </div>
+        </a>
     </div>
   </div>
-</div>
+  <div id="detail-content" class="col-xs-8">
+    <router-outlet></router-outlet>
+  </div>
+  </div>
 </div>

@@ -5,14 +5,16 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
+import { NavigationService } from './shared/navigation.service';
+import { WeatherService } from './weather/weather.service';
+import { AboutService } from './about/about.service';
+import { RestaurantsService } from './restaurants/restaurants.service';
+
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MapComponent } from './map/map.component';
 import { WeatherPreviewComponent } from './weather/weather-preview.component';
 import { WeatherExpandComponent } from './weather/weather-expand/weather-expand.component';
-
-import { NavigationService } from './shared/navigation.service';
-import { WeatherService } from './weather/weather.service';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { CrimeComponent } from './crime/crime.component';
 import { SchoolsComponent } from './schools/schools.component';
@@ -20,6 +22,7 @@ import { CrimeExpandComponent } from './crime/crime-expand/crime-expand.componen
 import { SchoolsExpandComponent } from './schools/schools-expand/schools-expand.component';
 import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/restaurants-expand.component';
 import { AboutComponent } from './about/about.component';
+import { RestaurantsDetailComponent } from './restaurants/restaurants-detail/restaurants-detail.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { AboutComponent } from './about/about.component';
     CrimeExpandComponent,
     SchoolsExpandComponent,
     RestaurantsExpandComponent,
-    AboutComponent
+    AboutComponent,
+    RestaurantsDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,7 @@ import { AboutComponent } from './about/about.component';
       libraries: ["places"]
     })
   ],
-  providers: [NavigationService, WeatherService],
+  providers: [NavigationService, WeatherService, AboutService, RestaurantsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

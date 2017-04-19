@@ -1,3 +1,12 @@
+
+h3 {
+  position: relative;
+  left: 25px;
+  margin-top: 15px;
+}
+button[disabled]:hover {
+  cursor: default;
+}
 #card {
   position: relative;
   height: 200px;
@@ -7,12 +16,4 @@
 }
 #content {
   margin: 0;
-}
-h3 {
-  position: relative;
-  left: 25px;
-  margin-top: 10px;
-}
-button[disabled]:hover {
-  cursor: default;
 }
