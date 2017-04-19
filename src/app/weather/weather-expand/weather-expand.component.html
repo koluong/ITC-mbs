@@ -2,13 +2,40 @@
   <div id="content">
   <div class="row">
     <div class="col-xs-10">
-      <h3>Expanded Weather</h3>
+      <h2>More Weather</h2>
     </div>
     <div class="col-xs-2">
       <a style="cursor: pointer;" (click)="onClose()">
         <span class="fa fa-angle-double-left fa-4x" style="color: #95989A;"></span>
       </a>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2><strong>Currently</strong></h2>
+      <h3>{{ weatherData['currently'].time * 1000 | date:'EEEE h:mm a'}}</h3>
+      <p><i>{{weatherData['minutely'].summary}}</i><p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <img
+      src="{{ this.iconSource }}{{ weatherData['currently'].icon}}-lrg.png"
+      alt="{{ weatherData['daily'].icon}}">
+    </div>
+    <div class="col-xs-3">
+      <span id="temperature">
+        {{ weatherData['currently'].temperature | number: '1.0-0'}}&deg;
+      </span>
+    </div>
+    <div id="miscInfo" class="col-xs-5">
+      <p>Precipitation: {{ weatherData['currently'].precipProbability | percent: '1.0-0' }}</p>
+      <p>Humidity: {{ weatherData['currently'].humidity | percent: '1.0-0' }}</p>
+      <p>Wind: {{ weatherData['currently'].windSpeed }} mph</p>
+    </div>
+  </div>
+  <div class="row">
+
   </div>
 </div>
 </div>

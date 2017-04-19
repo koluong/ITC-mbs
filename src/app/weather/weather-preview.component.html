@@ -6,12 +6,13 @@
     <div
       class="col-xs-3"
       *ngFor="let data of dailyData">
+        <span><h4> {{ data.time * 1000 | date:'EEE' }}</h4></span>
         <img
         src="{{ this.iconSource }}{{data.icon}}.png"
-        alt="">
+        alt="{{data.icon}}">
       <br>
         <span>
-          {{ data.temperatureMax | number: '1.0-0' }}&deg; |
+          <b>{{ data.temperatureMax | number: '1.0-0' }}&deg;</b> |
           {{ data.temperatureMin | number: '1.0-0' }}&deg;
         </span>
     </div>
