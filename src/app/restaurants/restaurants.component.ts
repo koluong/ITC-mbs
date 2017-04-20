@@ -13,7 +13,7 @@ import { RestaurantsService } from './restaurants.service';
 })
 export class RestaurantsComponent implements OnInit, OnDestroy {
   //CONSTANTS
-  photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxwidth=150&photo_reference=';
+  photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxheight=150&photo_reference=';
 
   //DATA
   inExpandedView: string;
@@ -58,7 +58,6 @@ export class RestaurantsComponent implements OnInit, OnDestroy {
       .subscribe(
         (data) => {
           this.searchData = data.slice(0, 2);
-          console.log(this.searchData);
         },
           err => { console.log(err);
         });

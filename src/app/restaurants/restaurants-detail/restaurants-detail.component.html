@@ -1,13 +1,55 @@
 <div id="detail-view">
   <div id="content">
   <div class="row">
-    <div class="col-xs-10">
-      <h2>Restaurant Detail</h2>
+    <div class="col-md-11">
+      <h2 style="display: inline;">{{ this.detailData.name }}</h2>
     </div>
-    <div class="col-xs-2">
+    <div class="col-xs-1">
       <a style="cursor: pointer;" (click)="onClose()">
         <span class="fa fa-angle-double-left fa-4x" style="color: #95989A;"></span>
       </a>
+    </div>
+  </div>
+  <div class="row">
+  </div>
+  <div class="row">
+    <div class="col-xs-5">
+      <div class="frame-square">
+        <div class="crop">
+          <img
+            *ngIf="this.photo_reference"
+            src="{{this.photoCall}}{{ this.photo_reference }}"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-7">
+      <i class="fa fa-location-arrow" aria-hidden="true"></i> <b>{{ this.detailData.vicinity }}</b><br>
+      <i class="fa fa-phone" aria-hidden="true"></i> {{ this.detailData.formatted_phone_number }}<br>
+      {{ this.detailData.rating }}<br>
+      <span *ngIf="this.open_now">
+        <span id="openText" *ngIf="this.open_now" style="color: green;"><strong>Open now</strong></span>
+        <span id="closedText" *ngIf="!this.open_now" style="color: red;"><strong>Closed now</strong></span>
+      </span><br><br>
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      <div *ngFor="let data of this.weekday_text">
+        {{ data }}
+      </div>
+    </div>
+  </div>
+  <h3>Reviews</h3>
+  <div class="row" *ngFor="let review of this.detailData['reviews']; let i = index">
+    <div class="col-md-12">
+      <blockquote *ngIf="i%2 == 0">
+        <p>{{ review.text | shorten: 250}}</p>
+        {{ review.aspects[0].rating }} /5
+        <footer>{{ review.author_name}}</footer>
+      </blockquote>
+      <blockquote class="blockquote-reverse" *ngIf="i%2 != 0">
+        <p>{{ review.text | shorten: 250}}</p>
+        {{ review.aspects[0].rating }} /5
+        <footer>{{ review.author_name}}</footer>
+      </blockquote>
     </div>
   </div>
 </div>

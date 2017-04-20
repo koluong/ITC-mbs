@@ -13,27 +13,31 @@
       </div>
       <div
         *ngFor="let data of restaurantData; let i = index">
-        <a (click)="onDetailOpen()" style="cursor: pointer; color: black">
+        <a (click)="onDetailOpen(data.place_id)" style="cursor: pointer; color: black">
           <div class="row" style="padding: 10px;">
-              <div classs="col-xs-4">
-                <div class="frame-square">
-                <div class="crop">
-                  <img
-                    src="{{ this.photoCall }}{{ data.photos[0].photo_reference}}"
-                    alt="{{ data.name}}">
-                </div>
-              </div>
               <div class="col-xs-8">
                 <p>
                 <b>{{ data.name }}</b><br>
                 {{data.vicinity }}<br>
                 {{ data.rating }}<br>
-                <span id="openText" *ngIf="data.opening_hours.open_now">Open</span>
-                <span id="closedText" *ngIf="!data.opening_hours.open_now">Closed</span>
+                <span *ngIf="data['opening_hours']">
+                  <span id="openText" *ngIf="data['opening_hours'].open_now" style="color: green;"><strong>Open now</strong></span>
+                  <span id="closedText" *ngIf="!data['opening_hours'].open_now" style="color: red;"><strong>Closed now</strong></span>
+                </span>
                 </p>
                   <hr>
               </div>
-            </div>
+              <div class="col-xs-4">
+                <span *ngIf="data['photos']">
+                  <div class="frame-square">
+                    <div class="crop">
+                      <img
+                        src="{{ this.photoCall }}{{ data.photos[0].photo_reference}}"
+                        alt="{{ data.name}}">
+                    </div>
+                  </div>
+                </span>
+              </div>
           </div>
         </a>
     </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Subject } from 'rxjs/Subject';
 
 import { NavigationService } from '../../shared/navigation.service';
 import { RestaurantsService } from '../restaurants.service';
@@ -10,7 +11,7 @@ import { RestaurantsService } from '../restaurants.service';
   styleUrls: ['./restaurants-expand.component.css']
 })
 export class RestaurantsExpandComponent implements OnInit {
-  photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxwidth=150&photo_reference=';
+  photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxheight=150&photo_reference=';
   restaurantData = [];
 
   constructor(private route: ActivatedRoute,
@@ -26,7 +27,8 @@ export class RestaurantsExpandComponent implements OnInit {
     this.router.navigate(['..'], {relativeTo: this.route});
     this.navService.exitExpandedView();
   }
-  onDetailOpen() {
+  onDetailOpen(place_id) {
+    this.restaurantsService.restaurantDetailGet(place_id);
     this.router.navigate(['detail'], {relativeTo: this.route});
   }
 
