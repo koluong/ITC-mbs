@@ -59,9 +59,11 @@ export class MapComponent implements OnInit {
 
           this.navService.setNewCoordinates(
                 place.geometry.location.lat(),
-                place.geometry.location.lng());
+                place.geometry.location.lng()
+              );
 
           this.router.navigate(['/']);
+          this.navService.resetViews();
         });
       });
     });

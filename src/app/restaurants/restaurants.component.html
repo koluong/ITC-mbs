@@ -13,7 +13,7 @@
             alt="{{ data.name}}">
         </div>
       </div>
-      <p><b>{{ data.name }}</b><br>
+      <p><b>{{ data.name | shorten: 20}}</b><br>
       {{ data.rating }}</p>
     </div>
     <div class="col-xs-2 text-right">

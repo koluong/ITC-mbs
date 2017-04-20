@@ -10,7 +10,7 @@ import { NavigationService } from '../shared/navigation.service';
 @Injectable()
 export class AboutService {
   private URL = 'https://en.wikipedia.org/w/api.php?';
-  private QUERY = 'action=query&format=json&prop=extracts&meta=&titles=&generator=search&exsentences=2&exintro=1&gsrlimit=1&gsrsearch=';
+  private QUERY = 'action=query&format=json&prop=extracts&meta=&titles=&generator=search&exsentences=2&exintro=1&gsrlimit=1&explaintext=1&gsrsearch=';
   locationFetched = new Subject<any>();
 
   location: string = "Pomona CA";

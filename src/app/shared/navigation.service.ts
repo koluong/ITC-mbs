@@ -26,10 +26,19 @@ export class NavigationService {
   setNewLocation(place) {
     var tempArray = [];
     this.location = '';
-    tempArray.push(place.address_components[3].long_name);
-    tempArray.push(place.address_components[5].long_name);
+    for (let data of place.address_components) {
+      if(data['types'][0] === 'locality'){
+        tempArray.push(data.long_name);
+      }
+      if(data['types'][0] === 'administrative_area_level_1'){
+        tempArray.push(data.long_name);
+      }
+    }
     // tempArray.push(place.address_components[6].long_name);
     this.location = tempArray.join(' ');
     this.locationChanged.next(this.location);
+  }
+  resetViews(){
+    this.whichExpandedView.next('');
   }
 }

@@ -24,6 +24,8 @@ import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/res
 import { AboutComponent } from './about/about.component';
 import { RestaurantsDetailComponent } from './restaurants/restaurants-detail/restaurants-detail.component';
 
+import { ShortenPipe } from './shared/shorten.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ import { RestaurantsDetailComponent } from './restaurants/restaurants-detail/res
     SchoolsExpandComponent,
     RestaurantsExpandComponent,
     AboutComponent,
-    RestaurantsDetailComponent
+    RestaurantsDetailComponent,
+    ShortenPipe
   ],
   imports: [
     BrowserModule,
