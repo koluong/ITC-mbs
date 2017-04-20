@@ -3,14 +3,14 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 
 import { NavigationService } from '../../shared/navigation.service';
-import { RestaurantsService } from '../restaurants.service';
+import { ActivitiesService } from '../activities.service';
 
 @Component({
-  selector: 'app-restaurants-detail',
-  templateUrl: './restaurants-detail.component.html',
-  styleUrls: ['./restaurants-detail.component.css']
+  selector: 'app-activities-detail',
+  templateUrl: './activities-detail.component.html',
+  styleUrls: ['./activities-detail.component.css']
 })
-export class RestaurantsDetailComponent implements OnInit, OnDestroy {
+export class ActivitiesDetailComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxheight=300&photo_reference=';
   photo_reference: string;
@@ -18,11 +18,10 @@ export class RestaurantsDetailComponent implements OnInit, OnDestroy {
   weekday_text: string[];
   detailData = {};
 
-  constructor(private router: Router,
-              private route: ActivatedRoute,
+  constructor(private route: ActivatedRoute,
+              private router: Router,
               private navService: NavigationService,
-              private restaurantsService: RestaurantsService) { }
-
+              private actService: ActivitiesService) { }
 
   ngOnInit() {
     this.loadDetailData();
@@ -35,8 +34,9 @@ export class RestaurantsDetailComponent implements OnInit, OnDestroy {
     this.router.navigate(['..'], {relativeTo: this.route});
     this.navService.exitExpandedView();
   }
+
   loadDetailData() {
-    this.subscription = this.restaurantsService.detailDataFetched
+    this.subscription = this.actService.activityDetailFetched
       .subscribe(
         (data) => {
           this.detailData = data;
@@ -46,14 +46,15 @@ export class RestaurantsDetailComponent implements OnInit, OnDestroy {
             if(data['opening_hours'].weekday_text)
               this.weekday_text = data['opening_hours'].weekday_text;
           }
+
           if(data['photos'][1].photo_reference) {
             this.photo_reference = data['photos'][1].photo_reference;
           } else {
           this.photo_reference = data['photos'][0].photo_reference;
         }
         },
-          err => { console.log(err);
-        });
+        err => console.log(err)
+      );
   }
   getRatingClass(rating) {
     if(rating == 5){
@@ -74,10 +75,9 @@ export class RestaurantsDetailComponent implements OnInit, OnDestroy {
       return 'stars-30'
     } else if ( rating >= 1 ) {
       return 'stars-20'
-    } else if ( rating > 0) {
-      return 'stars-10'
     } else {
-      return 'stars-0'
+      return 'stars-10'
     }
   }
+
 }

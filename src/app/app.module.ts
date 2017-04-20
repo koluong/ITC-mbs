@@ -9,6 +9,7 @@ import { NavigationService } from './shared/navigation.service';
 import { WeatherService } from './weather/weather.service';
 import { AboutService } from './about/about.service';
 import { RestaurantsService } from './restaurants/restaurants.service';
+import { ActivitiesService } from './activities/activities.service';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -25,6 +26,10 @@ import { AboutComponent } from './about/about.component';
 import { RestaurantsDetailComponent } from './restaurants/restaurants-detail/restaurants-detail.component';
 
 import { ShortenPipe } from './shared/shorten.pipe';
+import { ActivitiesComponent } from './activities/activities.component';
+import { LogoCardComponent } from './logo-card/logo-card.component';
+import { ActivitiesExpandComponent } from './activities/activities-expand/activities-expand.component';
+import { ActivitiesDetailComponent } from './activities/activities-detail/activities-detail.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +46,11 @@ import { ShortenPipe } from './shared/shorten.pipe';
     RestaurantsExpandComponent,
     AboutComponent,
     RestaurantsDetailComponent,
-    ShortenPipe
+    ShortenPipe,
+    ActivitiesComponent,
+    LogoCardComponent,
+    ActivitiesExpandComponent,
+    ActivitiesDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +63,12 @@ import { ShortenPipe } from './shared/shorten.pipe';
       libraries: ["places"]
     })
   ],
-  providers: [NavigationService, WeatherService, AboutService, RestaurantsService],
+  providers: [
+    NavigationService,
+    WeatherService,
+    AboutService,
+    RestaurantsService,
+    ActivitiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

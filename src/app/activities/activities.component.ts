@@ -4,65 +4,58 @@ import { Response } from '@angular/http';
 import { Subscription } from 'rxjs';
 
 import { NavigationService } from '../shared/navigation.service';
-import { RestaurantsService } from './restaurants.service';
+import { ActivitiesService } from './activities.service';
 
 @Component({
-  selector: 'app-restaurants',
-  templateUrl: './restaurants.component.html',
-  styleUrls: ['./restaurants.component.css']
+  selector: 'app-activities',
+  templateUrl: './activities.component.html',
+  styleUrls: ['./activities.component.css']
 })
-export class RestaurantsComponent implements OnInit, OnDestroy {
-  //CONSTANTS
+export class ActivitiesComponent implements OnInit, OnDestroy {
   photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxheight=150&photo_reference=';
 
-  //DATA
-  inExpandedView: string;
-  searchData: {};
-
-  //SUBSCRIPTIONS
   navSub: Subscription;
-  searchSub: Subscription;
+  activityData = [];
+  inExpandedView: string;
 
-  //INITIALIZATIONS
   constructor(private route: ActivatedRoute,
               private router: Router,
               private navService: NavigationService,
-              private restaurantsService: RestaurantsService) { }
+              private actService: ActivitiesService) { }
+
   ngOnInit() {
     this.navSub = this.navService.whichExpandedView
-      .subscribe(
-        (view: string) => this.inExpandedView = view
-      );
-    this.searchSub = this.restaurantsService.searchDataFetched
-      .subscribe(
-        (data) => {
-          data = '';
-          this.loadRestaurantData();
-        },
-        err => console.log(err)
-      );
-    this.loadRestaurantData();
+      .subscribe((view: string) => this.inExpandedView = view);
+
+    this.actService.activityDataFetched
+      .subscribe((data) => {
+        data='';
+        this.loadActivityData();
+      }, err => console.log(err));
+
+    this.loadActivityData();
   }
   ngOnDestroy() {
     this.navSub.unsubscribe();
-    this.searchSub.unsubscribe();
   }
-  //FUNCTIONS
   onExpand() {
-    this.router.navigate(['/restaurants']);
-    this.navService.enterExpandedView('restaurants');
+    this.router.navigate(['/activities']);
+    this.navService.enterExpandedView('activities');
   }
 
-  loadRestaurantData() {
-    this.restaurantsService.restaurantsSearch()
+  loadActivityData() {
+    this.actService.getActivityData()
       .subscribe(
         (data) => {
-          this.searchData = data.slice(0, 2);
+          if (data.length >= 2) {
+            this.activityData = data.slice(0, 2);
+          } else {
+            this.activityData = data;
+          }
         },
           err => { console.log(err);
         });
   }
-
   getRatingClass(rating) {
     if(rating == 5){
       return 'stars-100'
@@ -86,4 +79,5 @@ export class RestaurantsComponent implements OnInit, OnDestroy {
       return 'stars-10'
     }
   }
+
 }

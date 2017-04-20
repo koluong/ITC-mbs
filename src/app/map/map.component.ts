@@ -54,6 +54,7 @@ export class MapComponent implements OnInit {
           this.latitude = place.geometry.location.lat();
           this.longitude = place.geometry.location.lng();
           this.zoom = 15;
+          console.log(place);
 
           this.navService.setNewLocation(place);
 
