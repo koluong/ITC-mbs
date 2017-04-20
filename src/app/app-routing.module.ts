@@ -7,6 +7,8 @@ import { SchoolsExpandComponent } from './schools/schools-expand/schools-expand.
 import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/restaurants-expand.component';
 import { CrimeExpandComponent } from './crime/crime-expand/crime-expand.component';
 import { RestaurantsDetailComponent } from './restaurants/restaurants-detail/restaurants-detail.component';
+import { ActivitiesExpandComponent } from './activities/activities-expand/activities-expand.component';
+import { ActivitiesDetailComponent } from './activities/activities-detail/activities-detail.component';
 
 const appRoutes: Routes = [
   {path: '', component: MapComponent, children: [
@@ -14,6 +16,9 @@ const appRoutes: Routes = [
     {path: 'schools', component: SchoolsExpandComponent },
     {path: 'restaurants', component: RestaurantsExpandComponent, children: [
       {path: 'detail', component: RestaurantsDetailComponent}
+    ]},
+    {path: 'activities', component: ActivitiesExpandComponent, children: [
+      {path: 'detail', component: ActivitiesDetailComponent}
     ]},
     {path: 'crime', component: CrimeExpandComponent },
   ]}

@@ -31,7 +31,7 @@
         class="stars-container"
         [ngClass]="this.getRatingClass(this.detailData.rating)">
         ★★★★★</span><br>
-      <span *ngIf="this.open_now">
+      <span *ngIf="this['open_now']">
         <span id="openText" *ngIf="this.open_now" style="color: green;"><strong>Open now</strong></span>
         <span id="closedText" *ngIf="!this.open_now" style="color: red;"><strong>Closed now</strong></span>
       </span><br><br>
@@ -46,7 +46,7 @@
     <div class="col-md-12">
       <blockquote *ngIf="i%2 == 0">
         <p>{{ review.text | shorten: 250}}</p>
-        {{ review.rating }}/5
+        {{ review.rating }} /5
         <footer>{{ review.author_name}}</footer>
       </blockquote>
       <blockquote class="blockquote-reverse" *ngIf="i%2 != 0">

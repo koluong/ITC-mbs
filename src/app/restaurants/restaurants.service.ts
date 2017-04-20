@@ -1,5 +1,5 @@
 import { Injectable, OnDestroy } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import { Subject } from 'rxjs/Subject';
@@ -43,14 +43,14 @@ export class RestaurantsService implements OnDestroy{
   restaurantsSearch() {
     var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?';
     var key = '&key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ'
-    var params = 'type=restaurant&radius=10000&location='
+    var params = 'type=restaurant&rankby=distance&location='
           + this.latitude + ',' + this.longitude;
 
     return this.http.get(url + params + key)
       .map(
         (response: Response) => {
-          if (response.json()['results'].length >= 10) {
-            this.restaurantData = response.json()['results'].splice(0, 10);
+          if (response.json()['results'].length >= 15) {
+            this.restaurantData = response.json()['results'].splice(0, 15);
           } else {
             this.restaurantData = response.json()['results'];
           }
@@ -75,8 +75,4 @@ export class RestaurantsService implements OnDestroy{
   fetchRestaurantData() {
     return this.restaurantData;
   }
-  fetchDetailData() {
-    return this.detailData;
-  }
-
 }

@@ -1,0 +1,33 @@
+<div id="card">
+  <div class="row">
+      <h3>Places</h3>
+  </div>
+  <div class="row content">
+    <div
+      class="col-xs-5"
+      *ngFor="let data of activityData">
+      <div class="frame-square">
+        <div class="crop">
+          <img
+            src="{{ this.photoCall }}{{ data.photos[0].photo_reference}}"
+            alt="{{ data.name}}">
+        </div>
+      </div>
+      <p><b>{{ data.name | shorten: 18}}</b><br>
+        {{ data.rating }}
+        <span
+          class="stars-container"
+          [ngClass]="this.getRatingClass(data.rating)">
+          ★★★★★</span></p>
+    </div>
+    <div class="col-xs-2">
+      <button
+        type="button"
+        (click)="onExpand()"
+        class="btn btn-link"
+        [disabled]="inExpandedView === 'activities'">
+        <span class="fa fa-angle-right fa-4x" style="color: white;"></span>
+      </button>
+    </div>
+  </div>
+</div>

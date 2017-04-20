@@ -3,22 +3,21 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subject } from 'rxjs/Subject';
 
 import { NavigationService } from '../../shared/navigation.service';
-import { RestaurantsService } from '../restaurants.service';
+import { ActivitiesService } from '../activities.service';
 
 @Component({
-  selector: 'app-restaurants-expand',
-  templateUrl: './restaurants-expand.component.html',
-  styleUrls: ['./restaurants-expand.component.css']
+  selector: 'app-activities-expand',
+  templateUrl: './activities-expand.component.html',
+  styleUrls: ['./activities-expand.component.css']
 })
-export class RestaurantsExpandComponent implements OnInit {
+export class ActivitiesExpandComponent implements OnInit {
   photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxheight=150&photo_reference=';
-  restaurantData = [];
+  activityData = [];
 
   constructor(private route: ActivatedRoute,
               private router: Router,
               private navService: NavigationService,
-              private restaurantsService: RestaurantsService) { }
-
+              private actService: ActivitiesService) {}
   ngOnInit() {
     this.fetchData();
   }
@@ -28,12 +27,12 @@ export class RestaurantsExpandComponent implements OnInit {
     this.navService.exitExpandedView();
   }
   onDetailOpen(place_id) {
-    this.restaurantsService.restaurantDetailGet(place_id);
+    this.actService.getActivityDetail(place_id);
     this.router.navigate(['detail'], {relativeTo: this.route});
   }
 
   fetchData() {
-    this.restaurantData = this.restaurantsService.fetchRestaurantData();
+    this.activityData = this.actService.fetchActivityData();
   }
   getRatingClass(rating) {
     if(rating == 5){

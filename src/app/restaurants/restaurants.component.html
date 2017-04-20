@@ -6,15 +6,22 @@
     <div
       class="col-xs-5"
       *ngFor="let data of searchData">
-      <div class="frame-square">
-        <div class="crop">
-          <img
-            src="{{ this.photoCall }}{{ data.photos[0].photo_reference}}"
-            alt="{{ data.name}}">
+      <span *ngIf="data['photos']">
+        <div class="frame-square">
+          <div class="crop">
+            <img
+              src="{{ this.photoCall }}{{ data.photos[0].photo_reference}}"
+              alt="{{ data.name }}">
+          </div>
         </div>
-      </div>
+      </span>
       <p><b>{{ data.name | shorten: 20}}</b><br>
-      {{ data.rating }}</p>
+      {{ data.rating }}
+      <span
+        class="stars-container"
+        [ngClass]="this.getRatingClass(data.rating)">
+        ★★★★★</span>
+      </p>
     </div>
     <div class="col-xs-2 text-right">
       <button
@@ -22,7 +29,7 @@
         (click)="onExpand()"
         class="btn btn-link"
         [disabled]="inExpandedView === 'restaurants'">
-        <span class="fa fa-angle-right fa-4x" style="color: #95989A;"></span>
+        <span class="fa fa-angle-right fa-4x" style="color: white;"></span>
       </button>
     </div>
   </div>

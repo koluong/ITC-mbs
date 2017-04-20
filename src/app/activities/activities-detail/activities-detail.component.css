@@ -1,41 +1,40 @@
-#card {
-  position: relative;
-  height: 200px;
-  margin: 0 -15px 0 -15px;
-  border-bottom: 1px solid grey;
+h2{
+  padding-left: 10px;
+}
+#content {
+  height: 100%;
+  align-items: center;
+  background: white;
+  flex-grow: 1;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+  margin: 50px 20px 0 20px;
+  padding: 20px;
   z-index: 2;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-#card:before{
-    position:absolute;
-    z-index:-1;
-    top:0;
-    right:0;
-    width:15%;
-    height:100%;
-    content:"";
-    background-color: #2D9559;
+#detail-view {
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
 }
-.content {
-  margin: 0;
-}
-h3 {
-  position: relative;
-  left: 25px;
+
+.glyphicon-remove {
+  font-size: 20px;
+  color: gray;
   margin-top: 10px;
-}
-button[disabled]:hover {
-  cursor: default;
 }
 .frame-square {
   background: #fff;
-  border-radius: 2px;
   display: inline-block;
+  float: left;
   vertical-align: top;
   padding: 0px;
-  width: 150px;
-  height: 100px;
-  margin-right: .5em;
-  margin-bottom: .3em;
+  width: 250px;
+  height: 250px;
+  margin: .5em
 }
 .crop {
   height: 100%;

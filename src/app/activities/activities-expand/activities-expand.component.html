@@ -3,7 +3,7 @@
     <div id="expand-content" class="col-xs-4">
       <div class="row">
         <div class="col-xs-10">
-          <h2>More Restaurants</h2>
+          <h2>More Places</h2>
         </div>
         <div class="col-xs-2">
           <a style="cursor: pointer; margin-right: -20px;" (click)="onClose()">
@@ -12,13 +12,13 @@
         </div>
       </div>
       <div
-        *ngFor="let data of restaurantData; let i = index">
+        *ngFor="let data of activityData; let i = index">
         <a (click)="onDetailOpen(data.place_id)" style="cursor: pointer; color: black">
           <div class="row" style="padding: 10px;">
               <div class="col-xs-8">
                 <p>
                 <b>{{ data.name }}</b><br>
-                {{data.vicinity }}<br>
+                {{data.formatted_address }}<br>
                 {{ data.rating }}
                 <span
                   class="stars-container"
