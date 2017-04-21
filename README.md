@@ -52,9 +52,13 @@ In web development, a mashup extracts content from different sources, aggregates
 
 - **Left Sidebar**
 
-   This is the container that holds the about and result preview panes. The user can select which result they want to view further from the sidebar.
+   This is the container that holds the about and result preview panes. At a glance the user can see very general results like the current weather and nearby establishments. From the sidebar the user can select which result they want to view further.
 
-### Viewed Information and Data
+- **Expanded and Detailed Views**
+
+   The user accesses these views by clicking the arrow in a preview pane. These panes deliver more information and add functionality like locating an establishment on the map or visiting its website.
+
+### Information and Data Delivery
 Our web application displays the information into three different views in order to deliver information to the user. Initially, only the preview pane of each result is displayed. If the user wants more detailed information about a specific result they can navigate further through the views.
 
 **The views in the order of general to specific:**
