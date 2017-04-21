@@ -37,7 +37,8 @@ attributes, such as numbers of bedroom and bathroom, sizes of living space, rent
 
 ## Technical Documentation
 
-![Alt text](https://github.com/koluong/ITC-mbs/blob/master/src/assets/angular.png "Optional Title") test andy thing
+![Alt text](https://github.com/koluong/ITC-mbs/blob/master/src/assets/angular.png "Angular") test andy thing
+![Alt text](https://github.com/koluong/ITC-mbs/blob/master/src/assets/googlemaps.png "Google Maps")
 
 ## Development Plans
 
