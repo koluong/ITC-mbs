@@ -31,6 +31,11 @@ In web development, a mashup extracts content from different sources, aggregates
 | Places         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
 | Transportation | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
 
+### Additional Notes
+
+- The access to the data must be free. Sources that have free trials or a limited time access are not considered a free source.
+- Sources that provide free but limited access are okay to be used. Some of the free sources require creation of a free account.
+
 ## Application Features
 
 ### Viewed Information and Data
