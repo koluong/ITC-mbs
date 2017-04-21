@@ -24,14 +24,14 @@ This documentation analyzes and illustrates the application and the characterist
 
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which may include but are not limited the following:
 
-| Result         | Parameters             | Description                                                          |
-| -------------- | ---------------------- | -------------------------------------------------------------------- |
-| Map            | Longitude and Latitude | Generates an instance of Google Maps from the user-entered location. |
-| About          | City and State         |
-| Weather        | Longitude and Latitude |
-| Restaurants    | City and State         |
-| Places         | City and State         |
-| Transportation | City and State         |
+| Result         | Parameters             | Description                                                                                          |
+| -------------- | ---------------------- | ---------------------------------------------------------------------------------------------------- |
+| Map            | Longitude and Latitude | An instance of Google Maps that is generated from the user's entered location from the search input. |
+| About          | City and State         | The name and description of the searched location's city.                                            |
+| Weather        | Longitude and Latitude | The current and future weather of the searched location's city.                                      |
+| Restaurants    | Longitude and Latitude | A list of nearby restaurants.                                                                        |
+| Places         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
+| Transportation | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
 
 - What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
 - How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
