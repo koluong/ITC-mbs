@@ -25,7 +25,7 @@ This documentation analyzes and illustrates the application and the characterist
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which include the following:
 
 | Result             | Parameters             | Description                                                                                          |
-| ------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------- |
+| :----------------- | :--------------------- | :--------------------------------------------------------------------------------------------------- |
 | **Map**            | Longitude and Latitude | An instance of Google Maps that is generated from the user's entered location from the search input. |
 | **About**          | City and State         | The name and description of the searched location's city.                                            |
 | **Weather**        | Longitude and Latitude | The current and future weather of the searched location's city.                                      |
