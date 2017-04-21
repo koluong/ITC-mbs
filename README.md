@@ -28,9 +28,10 @@ In web development, a mashup extracts content from different sources, aggregates
 | **Map**            | Longitude and Latitude | An instance of Google Maps that is generated from the user's entered location from the search input. |
 | **About**          | City and State         | The name and description of the searched location's city.                                            |
 | **Weather**        | Longitude and Latitude | The current and future weather of the searched location's city.                                      |
-| **Restaurants**    | Longitude and Latitude | A list of nearby restaurants, information, location and user ratings and reviews.                                                                        |
+| **Restaurants**    | Longitude and Latitude | A list of nearby restaurants, information, location and user ratings and reviews.                    |
 | **Places**         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
 | **Transportation** | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
+| **Property**       | Zillow and Property ID | A property object containing property details including address, images and home facts.              |
 
 ### Requirements - Additional Notes
 - The access to the data must be free. Sources that have free trials or a limited time access are not considered a free source.
@@ -71,7 +72,7 @@ Our web application displays the information into three different views in order
 | **Restaurants**    | The two closest restaurants. Includes rating.           | A list of restaurants sorted by shortest distance from the user-entered location. Includes full address and open status.             | The selected restaurant. Includes phone number, hours of operations, website and reviews.     |
 | **Places**         | The two closest points of interest. Includes rating.    | A list of places sorted by shortest distance from the user-entered location. Includes full address and open status.                       | The selected places. Includes phone number, hours of operations, website and reviews.         |
 | **Transportation** | The two closest public transportation.                  | A list of public transportation sorted by shortest distance from the user-entered location. Includes full address and open status | The selected transportation. Includes phone number, hours of operations and website.          |
-
+| **Property**       |
 ## System Analysis and design
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/leaf-map-system.png "Leaf-Map Data Flow")
 
