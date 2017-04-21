@@ -66,10 +66,10 @@ export class MapComponent implements OnInit, OnDestroy {
             this.latitude = place.geometry.location.lat();
             this.longitude = place.geometry.location.lng();
             this.zoom = 15;
-            console.log(place);
 
             this.navService.setNewLocation(place);
-
+            this.navService.setPropertyAddress(place.name);
+            this.navService.setPropertyZip(place);
             this.navService.setNewCoordinates(
                   place.geometry.location.lat(),
                   place.geometry.location.lng()

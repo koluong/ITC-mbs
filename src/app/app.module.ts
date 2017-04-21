@@ -12,6 +12,7 @@ import { RestaurantsService } from './restaurants/restaurants.service';
 import { ActivitiesService } from './activities/activities.service';
 import { TransportationService } from './transportation/transportation.service';
 import { DistanceService } from './shared/distance.service';
+import { PropertiesService } from './properties/properties.service';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -31,6 +32,7 @@ import { ActivitiesDetailComponent } from './activities/activities-detail/activi
 import { TransportationComponent } from './transportation/transportation.component';
 import { TransportationExpandComponent } from './transportation/transportation-expand/transportation-expand.component';
 import { PropertiesComponent } from './properties/properties.component';
+import { PropertiesExpandComponent } from './properties/properties-expand/properties-expand.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { PropertiesComponent } from './properties/properties.component';
     ActivitiesDetailComponent,
     TransportationComponent,
     TransportationExpandComponent,
-    PropertiesComponent
+    PropertiesComponent,
+    PropertiesExpandComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +73,8 @@ import { PropertiesComponent } from './properties/properties.component';
     RestaurantsService,
     ActivitiesService,
     TransportationService,
-    DistanceService],
+    DistanceService,
+    PropertiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
