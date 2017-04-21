@@ -80,7 +80,7 @@ Our web application displays the information into three different views in order
 | **Places**         | The two closest points of interest. Includes rating.    | A list of places sorted by shortest distance from the user-entered location. Includes full address and open status.                       | The selected places. Includes phone number, hours of operations, website and reviews.         |
 | **Transportation** | The two closest public transportation.                  | A list of public transportation sorted by shortest distance from the user-entered location. Includes full address and open status | The selected transportation. Includes phone number, hours of operations and website.          |
 | **Property**       |
-## System Analysis and design
+## System Analysis and Design
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/leaf-map-system.png "Leaf-Map Data Flow")
 
 ### Hosting and Framework
