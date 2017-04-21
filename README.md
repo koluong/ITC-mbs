@@ -16,9 +16,8 @@ This documentation analyzes and illustrates the application and the characterist
 2. [Application Features](#application-features)
 3. [System Analysis and Design](#system-analysis-and-design)
 4. [Technical Documentation](#technical-documentation)
-5. [User Interface](#user-interface)
-6. [Development Plans](#development-plans)
-7. [Closing](#closing)
+5. [Development Plans](#development-plans)
+6. [Closing](#closing)
 
 ## Requirements
 
@@ -39,6 +38,8 @@ In web development, a mashup extracts content from different sources, aggregates
 - Sources that provide free but limited access are okay to be used. Some of the free sources require creation of a free account.
 
 ## Application Features
+
+### User Interface
 
 ### Viewed Information and Data
 
@@ -90,9 +91,6 @@ Wikipedia is built on top of MediaWiki API. This provides a convenient way to ac
 - *MediaWiki is open source software and free to use*
 
 ### [Amazon S3](https://www.mediawiki.org/wiki/API:Main_page)
-
-
-## User Interface
 
 ## Development Plans
 
