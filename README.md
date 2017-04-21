@@ -44,12 +44,12 @@ In web development, a mashup extracts content from different sources, aggregates
 
 Our web application displays the information into three different views:
 
-|                    | Preview Pane                    | Expanded View | Detailed View |
-| :----------------- | :------------------------------ | :------------------------------------------------------------------------------------------ | :------------ |
-| **Weather**        |
-| **Restaurants**    | The two closest restaurants        | A list of restaurants sorted by shortest distance from the user-entered location.           |
-| **Places**         | The two closest points of interest | A list of places sorted by shortest distance from the user-entered location.                |
-| **Transportation** | The two closest transportation     | A list of public transportation sorted by shortest distance from the user-entered location. |
+|                    | Preview Pane                          | Expanded View                                                                               | Detailed View |
+| :----------------- | :------------------------------------ | :------------------------------------------------------------------------------------------ | :------------ |
+| **Weather**        | The current and two day weather forecast.               |
+| **Restaurants**    | The two closest restaurants. Includes rating.           | A list of restaurants sorted by shortest distance from the user-entered location. Includes full address and open status.             | The selected restaurant. Includes phone number, hours of operations and website.     |
+| **Places**         | The two closest points of interest. Includes rating.    | A list of places sorted by shortest distance from the user-entered location. Includes full address and open status.                       | The selected places. Includes phone number, hours of operations and website.         |
+| **Transportation** | The two closest public transportation. Includes rating. | A list of public transportation sorted by shortest distance from the user-entered location. Includes full address and open status | The selected transportation. Includes phone number, hours of operations and website. |
 
 - What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
 - How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
