@@ -1,6 +1,9 @@
 # Leaf-Map
 Before you move to a new place, it would be useful to know the neighborhood, and it would be wonderful if most of the desired information can be aggregated and found in just one website.
 
+*Leaf-Map web-app is hosted on an S3 bucket. Click the link to visit.*
+[Leaf-Map](http://itc-leaf-map.s3-website-us-west-1.amazonaws.com/)
+
 ### Abstract
 Leaf-Map is a mashup web application that displays aggregate information about different neighborhoods. In just one search through Leaf-Map, the user is able to get information that would usually require different searches or visits to multiple websites.
 
