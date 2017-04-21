@@ -8,6 +8,13 @@ Before you move to a new place, it would be useful to know the neighborhood, and
 Leaf-Map is a mashup web application that displays aggregate information about different neighborhoods. In just one search through Leaf-Map, the user is able to get information that would usually require different searches or visits to multiple websites.
 
 ### Executive Summary
+- By combining data from different sources our web application displays useful information about a neighborhood in a single interface.
+- The user is able to search any location from Google Places which delivers the aggregate information into segmented panes and views.
+- This leveled pane system provides an efficient and user-friendly way to view the information.
+- Complied by the Angular CLI, our web application is deployed on hosted on Amazon Web Services S3.
+- Once the user enters the location, Google Maps API Web Services generates an object with values which are interpolated back into the DOM.
+- The location object also contains the values that are used as parameters in the other APIs to retrieve their data.
+- All the technologies we use are free of charge indefinitely.
 
 # Software Documentation
 
