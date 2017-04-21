@@ -8,9 +8,11 @@
       *ngFor="let data of activityData">
       <div class="frame-square">
         <div class="crop">
+          <span *ngIf="data['photos']">
           <img
             src="{{ this.photoCall }}{{ data.photos[0].photo_reference}}"
             alt="{{ data.name}}">
+          </span>
         </div>
       </div>
       <p><b>{{ data.name | shorten: 18}}</b><br>

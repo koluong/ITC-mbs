@@ -15,6 +15,7 @@ export class ActivitiesComponent implements OnInit, OnDestroy {
   photoCall = 'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ&maxheight=150&photo_reference=';
 
   navSub: Subscription;
+  dataSub: Subscription;
   activityData = [];
   inExpandedView: string;
 
@@ -27,7 +28,7 @@ export class ActivitiesComponent implements OnInit, OnDestroy {
     this.navSub = this.navService.whichExpandedView
       .subscribe((view: string) => this.inExpandedView = view);
 
-    this.actService.activityDataFetched
+    this.dataSub = this.actService.activityDataFetched
       .subscribe((data) => {
         data='';
         this.loadActivityData();
@@ -37,6 +38,7 @@ export class ActivitiesComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy() {
     this.navSub.unsubscribe();
+    this.dataSub.unsubscribe();
   }
   onExpand() {
     this.router.navigate(['/activities']);

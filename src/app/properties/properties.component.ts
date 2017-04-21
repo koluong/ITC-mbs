@@ -75,7 +75,6 @@ export class PropertiesComponent implements OnInit, OnDestroy {
       .subscribe(
         (data) => {
           this.propertyData = data;
-          console.log(this.propertyData);
       }, err => console.log(err))
   }
 }
