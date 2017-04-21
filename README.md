@@ -44,9 +44,14 @@ In web development, a mashup extracts content from different sources, aggregates
 
 Our web application displays the information into three different views:
 
-| Preview Pane | Expanded View | Detailed View |
-| ------------ | ------------- | ------------- |
-
+|                    | Preview View  | Expanded View | Preview Pane
+| :----------------- | :------------ | :------------ |
+| **Map**            |
+| **About**          |
+| **Weather**        |  
+| **Restaurants**    |
+| **Places**         |
+| **Transportation** |
 
 - What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
 - How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
