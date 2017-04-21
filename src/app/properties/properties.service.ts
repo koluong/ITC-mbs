@@ -17,8 +17,8 @@ export class PropertiesService implements OnDestroy {
   zipSub: Subscription;
 
   zpid: string;
-  address: string = '23907 Sapphire Canyon';
-  cityStateZip: string = 'Diamond Bar CA 91765';
+  address: string = '3801 West Temple Avenue';
+  cityStateZip: string = 'Pomona CA 91768';
 
   propertyData = [];
 
@@ -33,7 +33,7 @@ export class PropertiesService implements OnDestroy {
   }
 
   getSearchData() {
-    let url = 'http://www.zillow.com/webservice/GetDeepSearchResults.htm?';
+    let url = 'https://crossorigin.me/http://www.zillow.com/webservice/GetDeepSearchResults.htm?';
     let key = 'zws-id=X1-ZWz1fris19zrwr_9r65p';
     let address = '&address=' + this.address;
     let citystatezip = '&citystatezip=' + this.cityStateZip;
@@ -53,7 +53,7 @@ export class PropertiesService implements OnDestroy {
   getDetailData() {
     let parser = new DOMParser();
 
-    let url = 'http://www.zillow.com/webservice/GetUpdatedPropertyDetails.htm?';
+    let url = 'https://crossorigin.me/http://www.zillow.com/webservice/GetUpdatedPropertyDetails.htm?';
     let key = 'zws-id=X1-ZWz1fris19zrwr_9r65p';
     let zpid = '&zpid=' + this.zpid;
 
@@ -63,7 +63,6 @@ export class PropertiesService implements OnDestroy {
         (response: any) => {
           let doc = parser.parseFromString(response.text(), "application/xml");
           this.propertyData = [];
-          console.log(doc.getElementsByTagName('code')[0].childNodes[0].nodeValue);
           if (doc.getElementsByTagName('code')[0].childNodes[0].nodeValue != "502"){
             this.propertyData.push({
               street: doc.getElementsByTagName('street')[0].childNodes[0].nodeValue,
