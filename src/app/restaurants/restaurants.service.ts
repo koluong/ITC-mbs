@@ -41,7 +41,7 @@ export class RestaurantsService implements OnDestroy{
   }
   //API CALL
   restaurantsSearch() {
-    var url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?';
+    var url = 'https://crossorigin.me/https://maps.googleapis.com/maps/api/place/nearbysearch/json?';
     var key = '&key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ'
     var params = 'type=restaurant&rankby=distance&location='
           + this.latitude + ',' + this.longitude;
@@ -60,7 +60,7 @@ export class RestaurantsService implements OnDestroy{
   }
 
   restaurantDetailGet(place_id) {
-    var url = 'https://maps.googleapis.com/maps/api/place/details/json?';
+    var url = 'https://crossorigin.me/https://maps.googleapis.com/maps/api/place/details/json?';
     var key = 'key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ';
     var param = '&placeid='
     this.http.get(url + key + param + place_id)

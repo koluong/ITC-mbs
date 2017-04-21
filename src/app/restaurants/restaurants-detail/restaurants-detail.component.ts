@@ -16,7 +16,9 @@ export class RestaurantsDetailComponent implements OnInit, OnDestroy {
   photo_reference: string;
   open_now: boolean;
   weekday_text: string[];
-  detailData = {};
+  detailData: {};
+  latitude: number;
+  longitude: number;
 
   constructor(private router: Router,
               private route: ActivatedRoute,
@@ -50,10 +52,20 @@ export class RestaurantsDetailComponent implements OnInit, OnDestroy {
             this.photo_reference = data['photos'][1].photo_reference;
           } else {
           this.photo_reference = data['photos'][0].photo_reference;
-        }
+          }
+
+          if(data['geometry']){
+            this.latitude = data['geometry'].location.lat;
+            this.longitude = data['geometry'].location.lng;
+          }
         },
           err => { console.log(err);
         });
+  }
+
+  sendCoordinates() {
+    this.onClose();
+    this.navService.setMarkerCoordinates(this.latitude, this.longitude);
   }
   getRatingClass(rating) {
     if(rating == 5){

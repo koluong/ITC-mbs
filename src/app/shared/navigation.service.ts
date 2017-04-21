@@ -3,6 +3,7 @@ import { Subject } from 'rxjs/Subject';
 export class NavigationService {
   whichExpandedView = new Subject<string>();
   coordsChanged = new Subject<number[]>();
+  markerCoordsChange = new Subject<number[]>();
   locationChanged = new Subject<string>();
 
   coords = [];
@@ -21,6 +22,12 @@ export class NavigationService {
     this.coords.push(latitude);
     this.coords.push(longitude);
     this.coordsChanged.next(this.coords.slice());
+  }
+  setMarkerCoordinates(latitude: number, longitude: number) {
+    this.coords = [];
+    this.coords.push(latitude);
+    this.coords.push(longitude);
+    this.markerCoordsChange.next(this.coords.slice());
   }
 
   setNewLocation(place) {

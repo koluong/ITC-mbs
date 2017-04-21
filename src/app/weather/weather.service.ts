@@ -13,7 +13,7 @@ export class WeatherService implements OnDestroy {
 
   subscription: Subscription;
 
-  private URL = 'https://api.darksky.net/forecast';
+  private URL = 'https://crossorigin.me/https://api.darksky.net/forecast';
   private API_KEY = '/d3fd5f56820c4985a6ac1fd0ec1208c8/'
   latitude: number = 34.059144;
   longitude: number = -117.820072;

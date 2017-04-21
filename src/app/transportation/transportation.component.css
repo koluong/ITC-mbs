@@ -1,0 +1,91 @@
+#card {
+  position: relative;
+  height: 200px;
+  margin: 0 -15px 0 -15px;
+  border-bottom: 1px solid grey;
+  z-index: 2;
+}
+#card:before{
+    position:absolute;
+    z-index:-1;
+    top:0;
+    right:0;
+    width:15%;
+    height:100%;
+    content:"";
+    background-color: #2D9559;
+}
+.content {
+  margin: 0;
+}
+h3 {
+  position: relative;
+  left: 25px;
+  margin-top: 10px;
+}
+button[disabled]:hover {
+  cursor: default;
+}
+.frame-square {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px;
+  width: 150px;
+  height: 100px;
+  margin-right: .5em;
+  margin-bottom: .3em;
+}
+.crop {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+  }
+}
+
+.stars-container {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+}
+
+.stars-container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: lightgray;
+}
+
+.stars-container:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  color: black;
+  overflow: hidden;
+}
+
+.stars-0:after { width: 0%; }
+.stars-10:after { width: 10%; }
+.stars-20:after { width: 20%; }
+.stars-30:after { width: 30%; }
+.stars-40:after { width: 40%; }
+.stars-50:after { width: 50%; }
+.stars-60:after { width: 60%; }
+.stars-70:after { width: 70%; }
+.stars-80:after { width: 80%; }
+.stars-90:after { width: 90%; }
+.stars-100:after { width: 100; }
