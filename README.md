@@ -48,7 +48,7 @@ In web development, a mashup extracts content from different sources, aggregates
 
 - **Map**
 
-   This is the instance of Google Maps that will be generated every time the user searches for an address. The user can browse the map to look around and see the geographic location of any result they select (i.e. the selected house, restaurant, or point of interest).
+   This is the instance of Google Maps that will be generated every time the user searches for an address. The user can browse the map to look around and see the geographic location of any result they select (e.g. the selected house, restaurant, or point of interest).
 
 - **Left Sidebar**
 
@@ -83,7 +83,7 @@ Our web application displays the information into three different views in order
 Our application, complied by the Angular CLI, is hosted on an Amazon Web Services S3 bucket. Angular provides Single Page Application functionality so we are able to set the `index.html` as the index document within our static web hosting. We enable our CORS policy that allows resources to be requested from another domain.
 
 ### Data Flow
-
+As the user searches for a location, Google Places Autocomplete assists with fetching a valid location. Google Maps API Web Service creates an object with the location string with all the data we need for interpolation onto the DOM and as  parameters for the other APIs (e.g. Longitude and Latitude). The parameters are picked out from the location object and sent in as parameters to Dark Sky, MediaWiki, and Zillow APIs to get their respective data like weather and property information. Through Angular's string interpolation and property binding we delivery the data back into DOM as information the user can read and interact with.
 
 ## Technical Documentation
 
