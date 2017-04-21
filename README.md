@@ -1,10 +1,13 @@
-# ITC-mbs
+# Leaf-Map
+Before you move to a new place, it would be useful to know the neighborhood, and it would be wonderful if most of the desired information can be aggregated and found in just one website.
 Mashup web application that displays desired aggregate information about different neighborhoods.
 
-## Web Development Case
-Before you move to a new place, it would be useful to know the neighborhood, and it would be wonderful if most of the desired information can be aggregated and found in just one website.
+### Abstract
+Leaf-Map is a mashup web application that displays aggregate information about different neighborhood. Getting information that would usually take visits to multiple sites or take different searches is handled in just one search through Leaf-Map.
 
-### Requirements
+This documentation analyzes and illustrates the application and the characteristics of the system
+
+## Requirements
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, you develop a mashup web application that uses a location, such as an address, as input, combines information from different free sources, and displays various results which may include but are not limited the following:
 
 
