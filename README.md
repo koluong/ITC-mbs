@@ -17,7 +17,7 @@ This documentation analyzes and illustrates the application and the characterist
 2. [Application Features](#application-features)
 3. [System Analysis and Design](#system-analysis-and-design)
 4. [Technical Documentation](#technical-documentation)
-5. [Development Plans](#development-plans)
+5. [Future Development Plans](#future-development-plans)
 6. [Closing](#closing)
 
 
@@ -116,6 +116,6 @@ Wikipedia is built on top of MediaWiki API. This provides a convenient way to ac
 
 ### [Amazon S3](https://www.mediawiki.org/wiki/API:Main_page)
 
-## Development Plans
+## Future Development Plans
 
 ## Closing
