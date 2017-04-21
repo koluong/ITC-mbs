@@ -24,14 +24,14 @@ This documentation analyzes and illustrates the application and the characterist
 
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which include the following:
 
-| Result         | Parameters             | Description                                                                                          |
-| -------------- | ---------------------- | ---------------------------------------------------------------------------------------------------- |
-| Map            | Longitude and Latitude | An instance of Google Maps that is generated from the user's entered location from the search input. |
-| About          | City and State         | The name and description of the searched location's city.                                            |
-| Weather        | Longitude and Latitude | The current and future weather of the searched location's city.                                      |
-| Restaurants    | Longitude and Latitude | A list of nearby restaurants.                                                                        |
-| Places         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
-| Transportation | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
+| Result             | Parameters             | Description                                                                                          |
+| ------------------ | ---------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Map**            | Longitude and Latitude | An instance of Google Maps that is generated from the user's entered location from the search input. |
+| **About**          | City and State         | The name and description of the searched location's city.                                            |
+| **Weather**        | Longitude and Latitude | The current and future weather of the searched location's city.                                      |
+| **Restaurants**    | Longitude and Latitude | A list of nearby restaurants.                                                                        |
+| **Places**         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
+| **Transportation** | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
 
 ### Additional Notes
 
@@ -41,6 +41,8 @@ In web development, a mashup extracts content from different sources, aggregates
 ## Application Features
 
 ### Viewed Information and Data
+
+Our web application displays the information into three different views:
 
 | Preview Pane | Expanded View | Detailed View |
 | ------------ | ------------- | ------------- |
