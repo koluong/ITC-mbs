@@ -39,8 +39,8 @@ attributes, such as numbers of bedroom and bathroom, sizes of living space, rent
 
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/angular.png?raw=true "Angular")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/googlemaps.png "Google Maps")
-![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/googlemaps.png "Dark Sky")
-![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/googlemaps.png "Google Maps")
+![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/darksky.png "Dark Sky")
+![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/wikipedia.jpg "Wikipedia")
 
 ## Development Plans
 
