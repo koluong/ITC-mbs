@@ -46,7 +46,7 @@ In web development, a mashup extracts content from different sources, aggregates
 Our web application displays the information into three different views in order to deliver information to the user. Initially, only the preview pane of each result is displayed. If the user wants more detailed information about a specific result they can navigate further through the views.
 
 **The views in the order of general to specific:**
-1. Preview Pane (Displayed Initially)
+1. Preview Pane (Displayed Automatically)
 2. Expanded View
 3. Detailed View
 
