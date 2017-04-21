@@ -80,7 +80,7 @@ Our web application displays the information into three different views in order
 
 ## Technical Documentation
 
-![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/angular.png?raw=true "Angular")
+![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/angular.png "Angular")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/googlemaps.png "Google Maps")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/zillow.png "Zillow")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/darksky.png "Dark Sky")
@@ -94,6 +94,10 @@ We utilize Angular to create a Single Page Application (SPA) by using front-end 
 ### [Google Maps and Places](https://console.developers.google.com/apis/library)
 Google Maps and Google Places provides web services in generating the map and retrieving locations for our restaurant and places components.
 - *Google Maps JavaScript and Google Places API and web services are free for the first 1000 calls per day; by having billing information free calls are increased to 150,000 per day*
+
+### [Zillow](https://www.zillow.com/howto/api/APIOverview.htm)
+Zillow API provides an extensive web service to get real estate, property details and valuation, and neighborhood data returned in XML.
+- *Using Zillow API is free for the first 1000 requests per day*
 
 ### [Dark Sky](https://darksky.net/dev/)
 We needed a weather API that handles request for the current and future weather. Dark Sky fulfills both of these while providing minute-by-minute weather forecast in JSON format.
