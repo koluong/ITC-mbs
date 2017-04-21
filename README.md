@@ -43,9 +43,13 @@ attributes, such as numbers of bedroom and bathroom, sizes of living space, rent
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/darksky.png "Dark Sky")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/wikipedia.jpg "Wikipedia")
 
-### -[Angular](https://angular.io)
-We use Angular
+### [Angular](https://angular.io)
+We utilize Angular to create a Single Page Application (SPA) by using front-end routing. We also make use of Angular's data binding to get user input and event and property binding to control the HTML DOM. Angular allows for a responsive and reactive application.
+- *Project created and compiled with Angular CLI*
 
+### [Google Maps and Places](https://console.developers.google.com/apis/library)
+Google Maps and Google Places provides web services in generating the map and retrieving locations for our restaurant and places components.
+- *Google Maps JavaScript and Google Places API and web services are free to use for the first 1000 calls per day; by having billing information free calls are increased to 150,000 per day*
 ## User Interface
 
 ## Development Plans
