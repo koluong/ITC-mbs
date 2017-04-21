@@ -9,10 +9,7 @@ Leaf-Map is a mashup web application that displays aggregate information about d
 
 ### Executive Summary
 
-
-
 # Software Documentation
-
 
 ### Content
 This documentation analyzes and illustrates the application and the characteristics of the system, the following will be discussed:
