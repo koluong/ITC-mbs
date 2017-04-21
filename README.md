@@ -10,6 +10,7 @@ Leaf-Map is a mashup web application that displays aggregate information about d
 
 # Software Documentation
 
+
 ### Content
 This documentation analyzes and illustrates the application and the characteristics of the system, the following will be discussed:
 1. [Requirements](#requirements)
@@ -19,8 +20,8 @@ This documentation analyzes and illustrates the application and the characterist
 5. [Development Plans](#development-plans)
 6. [Closing](#closing)
 
-## Requirements
 
+## Requirements
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which include the following:
 
 | Result             | Parameters             | Description                                                                                          |
@@ -33,16 +34,24 @@ In web development, a mashup extracts content from different sources, aggregates
 | **Transportation** | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
 
 ### Requirements - Additional Notes
-
 - The access to the data must be free. Sources that have free trials or a limited time access are not considered a free source.
 - Sources that provide free but limited access are okay to be used. Some of the free sources require creation of a free account.
 
 ## Application Features
 
+
 ### User Interface
 
-### Viewed Information and Data
+#### Search bar
+Users can search for a specific location through Google Maps autocomplete function. This address contains the parameters for the other requests.
 
+#### Map
+This is the instance of Google Maps that will be generated every time the user searches for an address. The user can browse the map to look around and see the geographic location of any result they select (i.e. the selected house, restaurant, or point of interest).
+
+#### Left Sidebar
+This is the container that holds the about and result preview panes. The user can select which result they want to view further from the sidebar. 
+
+### Viewed Information and Data
 Our web application displays the information into three different views in order to deliver information to the user. Initially, only the preview pane of each result is displayed. If the user wants more detailed information about a specific result they can navigate further through the views.
 
 **The views in the order of general to specific:**
