@@ -41,7 +41,8 @@ attributes, such as numbers of bedroom and bathroom, sizes of living space, rent
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/angular.png?raw=true "Angular")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/googlemaps.png "Google Maps")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/darksky.png "Dark Sky")
-![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/wikipedia.jpg "Wikipedia")
+![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/wikipedia.jpg "MediaWiki")
+![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/s3.png "Amazon S3")
 
 ### [Angular](https://angular.io)
 We utilize Angular to create a Single Page Application (SPA) by using front-end routing. We also make use of Angular's data binding to get user input and event and property binding to control the HTML DOM. Angular allows for a responsive and reactive application.
@@ -58,6 +59,9 @@ We needed a weather API that handles request for the current and future weather.
 ### [MediaWiki](https://www.mediawiki.org/wiki/API:Main_page)
 Wikipedia is built on top of MediaWiki API. This provides a convenient way to access wiki features, data, and meta-data returned in JSON format.
 - *MediaWiki is open source software and free to use*
+
+### [Amazon S3](https://www.mediawiki.org/wiki/API:Main_page)
+
 
 ## User Interface
 
