@@ -114,8 +114,9 @@ We needed a weather API that handles request for the current and future weather.
 Wikipedia is built on top of MediaWiki API. This provides a convenient way to access wiki features, data, and meta-data returned in JSON format.
 - *MediaWiki is open source software and free to use*
 
-### [Amazon S3](https://www.mediawiki.org/wiki/API:Main_page)
+### [Amazon S3](https://aws.amazon.com/s3/)
 
 ## Future Development Plans
+
 
 ## Closing
