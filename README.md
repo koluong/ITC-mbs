@@ -42,15 +42,15 @@ In web development, a mashup extracts content from different sources, aggregates
 
 ### User Interface
 
- - Search bar
+ - **Search bar**
 
    Users can search for a specific location through Google Maps autocomplete function. This address contains the parameters for the other requests.
 
-- Map
+- **Map**
 
    This is the instance of Google Maps that will be generated every time the user searches for an address. The user can browse the map to look around and see the geographic location of any result they select (i.e. the selected house, restaurant, or point of interest).
 
-- Left Sidebar
+- **Left Sidebar**
 
    This is the container that holds the about and result preview panes. The user can select which result they want to view further from the sidebar.
 
