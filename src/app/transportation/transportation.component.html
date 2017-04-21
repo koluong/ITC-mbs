@@ -1,0 +1,43 @@
+<div id="card">
+  <div class="row">
+      <h3>Transportation</h3>
+  </div>
+  <div id="content" class="row" *ngIf="this.airportData">
+    <div
+      class="col-xs-3 text-center">
+        <img
+        src="{{ airportData['icon'] }}"
+        alt="{{ airportData['name'] }}">
+      <br>
+      <b>{{ airportData.name}}</b><br>
+      {{ airSingleDist }}
+    </div>
+    <div
+      class="col-xs-3 text-center" *ngIf="this.busData">
+        <img
+        src="{{ busData['icon'] }}"
+        alt="{{ busData['name'] }}">
+      <br>
+      <b>{{ busData.name }}</b><br>
+      {{ busSingleDist }}
+    </div>
+    <div
+      class="col-xs-3 text-center" *ngIf="this.trainData">
+        <img
+        src="{{ trainData['icon'] }}"
+        alt="{{ trainData['name'] }}">
+      <br>
+      <b>{{ trainData.name }}</b><br>
+      {{ trainSingleDist }}
+    </div>
+    <div class="col-xs-3 text-right" style="padding-right: 30px;">
+      <button
+        type="button"
+        (click)="onExpand()"
+        class="btn btn-link"
+        [disabled]="inExpandedView === 'transporation'">
+        <span class="fa fa-angle-right fa-4x" style="color: white;"></span>
+      </button>
+    </div>
+  </div>
+</div>

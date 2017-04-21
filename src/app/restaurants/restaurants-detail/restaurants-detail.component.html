@@ -1,5 +1,5 @@
 <div id="detail-view">
-  <div id="content">
+  <div id="content" *ngIf="this.detailData">
   <div class="row">
     <div class="col-md-11">
       <h2 style="display: inline;">{{ this.detailData.name }}</h2>
@@ -24,7 +24,10 @@
       </div>
     </div>
     <div class="col-xs-7">
-      <i class="fa fa-location-arrow" aria-hidden="true"></i> <b>{{ this.detailData.vicinity }}</b><br>
+      <a style="cursor: pointer;"
+        (click)="sendCoordinates()">
+        <i class="fa fa-location-arrow" aria-hidden="true"></i> <b>{{ this.detailData.vicinity }}</b><br>
+      </a>
       <i class="fa fa-phone" aria-hidden="true"></i> {{ this.detailData.formatted_phone_number }}<br>
       {{ this.detailData.rating }}
       <span

@@ -10,6 +10,8 @@ import { WeatherService } from './weather/weather.service';
 import { AboutService } from './about/about.service';
 import { RestaurantsService } from './restaurants/restaurants.service';
 import { ActivitiesService } from './activities/activities.service';
+import { TransportationService } from './transportation/transportation.service';
+import { DistanceService } from './shared/distance.service';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -17,10 +19,6 @@ import { MapComponent } from './map/map.component';
 import { WeatherPreviewComponent } from './weather/weather-preview.component';
 import { WeatherExpandComponent } from './weather/weather-expand/weather-expand.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
-import { CrimeComponent } from './crime/crime.component';
-import { SchoolsComponent } from './schools/schools.component';
-import { CrimeExpandComponent } from './crime/crime-expand/crime-expand.component';
-import { SchoolsExpandComponent } from './schools/schools-expand/schools-expand.component';
 import { RestaurantsExpandComponent } from './restaurants/restaurants-expand/restaurants-expand.component';
 import { AboutComponent } from './about/about.component';
 import { RestaurantsDetailComponent } from './restaurants/restaurants-detail/restaurants-detail.component';
@@ -30,6 +28,9 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { LogoCardComponent } from './logo-card/logo-card.component';
 import { ActivitiesExpandComponent } from './activities/activities-expand/activities-expand.component';
 import { ActivitiesDetailComponent } from './activities/activities-detail/activities-detail.component';
+import { TransportationComponent } from './transportation/transportation.component';
+import { TransportationExpandComponent } from './transportation/transportation-expand/transportation-expand.component';
+import { PropertiesComponent } from './properties/properties.component';
 
 @NgModule({
   declarations: [
@@ -39,10 +40,6 @@ import { ActivitiesDetailComponent } from './activities/activities-detail/activi
     WeatherPreviewComponent,
     WeatherExpandComponent,
     RestaurantsComponent,
-    CrimeComponent,
-    SchoolsComponent,
-    CrimeExpandComponent,
-    SchoolsExpandComponent,
     RestaurantsExpandComponent,
     AboutComponent,
     RestaurantsDetailComponent,
@@ -50,7 +47,10 @@ import { ActivitiesDetailComponent } from './activities/activities-detail/activi
     ActivitiesComponent,
     LogoCardComponent,
     ActivitiesExpandComponent,
-    ActivitiesDetailComponent
+    ActivitiesDetailComponent,
+    TransportationComponent,
+    TransportationExpandComponent,
+    PropertiesComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +68,9 @@ import { ActivitiesDetailComponent } from './activities/activities-detail/activi
     WeatherService,
     AboutService,
     RestaurantsService,
-    ActivitiesService],
+    ActivitiesService,
+    TransportationService,
+    DistanceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

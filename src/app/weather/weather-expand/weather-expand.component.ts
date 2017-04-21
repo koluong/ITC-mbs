@@ -12,8 +12,8 @@ import { WeatherService } from '../weather.service';
 export class WeatherExpandComponent implements OnInit {
   iconSource = "../../assets/weather-icons/";
   weatherData: {};
-  hourlyTemps = [];
-  hourlyHours = [];
+  weeklyData: {};
+  hourlyData = [];
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -22,10 +22,12 @@ export class WeatherExpandComponent implements OnInit {
 
   ngOnInit() {
     this.weatherData = this.weatherService.fetchWeatherData();
+    this.weeklyData = this.weatherService.fetchWeatherData()['daily'].data.slice(1, 6);
+    this.hourlyData = this.weatherService.fetchWeatherData()['hourly'].data.slice(0, 10);
   }
 
   onClose() {
-    this.router.navigate(['..'], {relativeTo: this.route});
+    this.router.navigate(['/']);
     this.navService.exitExpandedView();
   }
 

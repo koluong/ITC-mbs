@@ -33,7 +33,7 @@ export class ActivitiesService implements OnDestroy{
 
   //API CALLS
   getActivityData() {
-    let url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?';
+    let url = 'https://crossorigin.me/https://maps.googleapis.com/maps/api/place/textsearch/json?';
     let key = '&language=en&key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ';
     let param = '&query=point+of+interests+' + this.location;
 
@@ -50,7 +50,7 @@ export class ActivitiesService implements OnDestroy{
   }
 
   getActivityDetail(place_id) {
-    var url = 'https://maps.googleapis.com/maps/api/place/details/json?';
+    var url = 'https://crossorigin.me/https://maps.googleapis.com/maps/api/place/details/json?';
     var key = 'key=AIzaSyBvQmk94aTqb-lS9TZcYK0XPE_Vj93i6CQ';
     var param = '&placeid='
     this.http.get(url + key + param + place_id)

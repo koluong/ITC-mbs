@@ -1,0 +1,56 @@
+#card {
+  position: relative;
+  height: 200px;
+  margin: 0 -15px 0 -15px;
+  border-bottom: 1px solid grey;
+  z-index: 2;
+}
+#card:before{
+    position:absolute;
+    z-index:-1;
+    top:0;
+    right:0;
+    width:15%;
+    height:100%;
+    content:"";
+    background-color: #7DCC9F;
+}
+.content {
+  margin: 0;
+}
+h3 {
+  position: relative;
+  left: 25px;
+  margin-top: 10px;
+}
+button[disabled]:hover {
+  cursor: default;
+}
+.frame-square {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px;
+  width: 150px;
+  height: 100px;
+  margin-right: .5em;
+  margin-bottom: .3em;
+}
+.crop {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+  }
+}
