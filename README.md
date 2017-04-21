@@ -28,7 +28,7 @@ In web development, a mashup extracts content from different sources, aggregates
 | **Map**            | Longitude and Latitude | An instance of Google Maps that is generated from the user's entered location from the search input. |
 | **About**          | City and State         | The name and description of the searched location's city.                                            |
 | **Weather**        | Longitude and Latitude | The current and future weather of the searched location's city.                                      |
-| **Restaurants**    | Longitude and Latitude | A list of nearby restaurants.                                                                        |
+| **Restaurants**    | Longitude and Latitude | A list of nearby restaurants, information, location and user ratings and reviews.                                                                        |
 | **Places**         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
 | **Transportation** | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
 
