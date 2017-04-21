@@ -36,7 +36,8 @@ attributes, such as numbers of bedroom and bathroom, sizes of living space, rent
 ## System Analysis and design
 
 ## Technical Documentation
-![Alt text] (https://angular.io/resources/images/logos/angular/angular.svg)
+
+![Alt text](https://angular.io/resources/images/logos/angular/angular.svg "Optional Title")
 
 ## Development Plans
 
