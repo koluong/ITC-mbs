@@ -56,6 +56,8 @@ Our web application displays the information into three different views in order
 
 **The views in the order of general to specific:**
 1. Preview Pane *(Displayed Automatically)*
+
+...sdf
 2. Expanded View
 3. Detailed View
 
