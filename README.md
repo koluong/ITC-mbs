@@ -44,8 +44,8 @@ In web development, a mashup extracts content from different sources, aggregates
 
 Our web application displays the information into three different views:
 
-|                    | Preview View  | Expanded View | Preview Pane
-| :----------------- | :------------ | :------------ |
+|                    | Preview View  | Expanded View | Preview Pane |
+| :----------------- | :------------ | :------------ | :----------- |
 | **Map**            |
 | **About**          |
 | **Weather**        |  
