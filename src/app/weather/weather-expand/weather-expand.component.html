@@ -30,12 +30,58 @@
     </div>
     <div id="miscInfo" class="col-xs-5">
       <p>Precipitation: {{ weatherData['currently'].precipProbability | percent: '1.0-0' }}</p>
+      <p>Pressure: {{ weatherData['currently'].pressure | number: '1.0-0'}} mb</p>
       <p>Humidity: {{ weatherData['currently'].humidity | percent: '1.0-0' }}</p>
       <p>Wind: {{ weatherData['currently'].windSpeed }} mph</p>
     </div>
   </div>
+  <br><br>
   <div class="row">
-
+    <div class="col-xs-12">
+      <h3>Hourly</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col-md-1"
+      style="margin: 2px;"
+      *ngFor="let data of hourlyData">
+      <strong>{{ data.temperature | number: '1.0-0'}}&deg;</strong>
+      {{ data.time * 1000 | date:'h a'}}
+    </div>
+  </div><br>
+  <div class="row">
+    <div class="col-md-12">
+      <i>{{ weatherData['hourly'].summary }}</i>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Five Day Forecast</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col-xs-2 text-center"
+      style="margin: 2px;"
+      *ngFor="let data of weeklyData">
+        <span><h4> {{ data.time * 1000 | date:'EEEE' }}</h4></span>
+        <img
+        src="{{ this.iconSource }}{{data.icon}}.png"
+        alt="{{data.icon}}">
+      <br>
+        <span>
+          <b>{{ data.temperatureMax | number: '1.0-0' }}&deg;</b> |
+          {{ data.temperatureMin | number: '1.0-0' }}&deg;
+        </span>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <i>{{ weatherData['daily'].summary }}</i>
+    </div>
   </div>
 </div>
 </div>

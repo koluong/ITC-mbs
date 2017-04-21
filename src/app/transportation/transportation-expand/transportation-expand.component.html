@@ -1,0 +1,110 @@
+<div class="expanded-view">
+  <div id="content" class="row">
+    <div id="expand-content" class="col-xs-4">
+      <div class="row">
+        <div class="col-xs-10">
+          <h2>More Transportation</h2>
+        </div>
+        <div class="col-xs-2">
+          <a style="cursor: pointer; margin-right: -20px;" (click)="onClose()">
+            <span class="fa fa-angle-double-left fa-4x" style="color: #95989A;"></span>
+          </a>
+        </div>
+      </div>
+        <h3>Airports</h3>
+      <div
+        *ngFor="let data of airportData; let i = index">
+          <div class="row" style="padding: 10px;">
+            <div class="col-xs-8">
+              <p><b>{{ data.name }}</b><br>
+              <a style="cursor: pointer;"
+                (click)="sendCoordinates(data['geometry'].location.lat, data['geometry'].location.lng)">
+                {{data.formatted_address }}<br>
+              </a>
+              {{ data['rating'] }}
+              <span
+                class="stars-container"
+                [ngClass]="this.getRatingClass(data['rating'])">
+                ★★★★★</span><br>
+              {{ this.airportDistanceData[i].distance.text }}
+              </p>
+                <hr>
+            </div>
+            <div class="col-xs-4">
+              <span *ngIf="data['photos']">
+                <div class="frame-square">
+                  <div class="crop">
+                    <img
+                      src="{{ photoCall }}{{ data.photos[0].photo_reference}}"
+                      alt="{{ data.name}}">
+                  </div>
+                </div>
+              </span>
+            </div>
+        </div>
+    </div>
+    <h3>Train Station</h3>
+    <div
+      *ngFor="let data of trainData; let i = index">
+        <div class="row" style="padding: 10px;">
+          <div class="col-xs-8">
+            <p><b>{{ data.name }}</b><br>
+            <a style="cursor: pointer;"
+              (click)="sendCoordinates(data['geometry'].location.lat, data['geometry'].location.lng)">
+              {{data.vicinity }}<br>
+            </a>
+            {{ data['rating'] }}
+            <span
+              class="stars-container"
+              [ngClass]="this.getRatingClass(data['rating'])">
+              ★★★★★</span><br>
+            {{ this.trainDistanceData[i].distance.text }}
+            </p>
+              <hr>
+          </div>
+          <div class="col-xs-4">
+            <span *ngIf="data['photos']">
+              <div class="frame-square">
+                <div class="crop">
+                  <img
+                    src="{{ photoCall }}{{ data.photos[0].photo_reference}}"
+                    alt="{{ data.name}}">
+                </div>
+              </div>
+            </span>
+          </div>
+      </div>
+  </div>
+    <h3>Bus Stops</h3>
+    <div
+      *ngFor="let data of busData; let i = index">
+        <div class="row" style="padding: 10px;">
+          <div class="col-xs-8">
+            <p>
+            <a style="cursor: pointer;"
+              (click)="sendCoordinates(data['geometry'].location.lat, data['geometry'].location.lng)">
+              <b>{{ data.name }}</b>
+            </a><br>
+            {{ this.busDistanceData[i].distance.text }}
+            </p>
+              <hr>
+          </div>
+          <div class="col-xs-4">
+            <span *ngIf="data['photos']">
+              <div class="frame-square">
+                <div class="crop">
+                  <img
+                    src="{{ photoCall }}{{ data.photos[0].photo_reference}}"
+                    alt="{{ data.name}}">
+                </div>
+              </div>
+            </span>
+          </div>
+      </div>
+  </div>
+  </div>
+  <div id="detail-content" class="col-xs-8">
+    <router-outlet></router-outlet>
+  </div>
+  </div>
+</div>

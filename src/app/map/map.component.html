@@ -11,10 +11,13 @@
           class="form-control"
           #search
           [formControl]="searchControl">
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
       </div>
       <router-outlet></router-outlet>
       <sebm-google-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
-        <sebm-google-map-marker [latitude]="latitude" [longitude]="longitude"></sebm-google-map-marker>
+        <sebm-google-map-marker
+          *ngFor="let m of markers;"
+          [latitude]="m.lat" [longitude]="m.lng" [label]="m.label"></sebm-google-map-marker>
       </sebm-google-map>
   </div>
 </div>
