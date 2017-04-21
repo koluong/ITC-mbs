@@ -31,6 +31,8 @@ In web development, a mashup extracts content from different sources, aggregates
 | Places         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
 | Transportation | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
 
+## Application Features
+
 ### Viewed Information and Data
 
 | Preview Pane | Expanded View | Detailed View |
@@ -47,7 +49,7 @@ listing prices, years built, distances to the given location, etc.
 - What nearby properties are currently on the market for rent and what are their
 attributes, such as numbers of bedroom and bathroom, sizes of living space, rental rates, distances to the given location, etc.
 
-## Application Features
+
 
 ## System Analysis and design
 
