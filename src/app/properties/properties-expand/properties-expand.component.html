@@ -1,0 +1,59 @@
+<div class="expanded-view">
+  <div id="content">
+  <div class="row">
+    <div class="col-xs-10">
+      <h2>Property Detail</h2>
+    </div>
+    <div class="col-xs-2">
+      <a style="cursor: pointer;" (click)="onClose()">
+        <span class="fa fa-angle-double-left fa-4x" style="color: #95989A;"></span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <img
+      class="img-responsive"
+        src="{{ propertyData[0]['image']}}"
+        alt="House">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p><b>{{ propertyData[0].street }}<br>
+        {{ propertyData[0].zipcode }}
+        {{ propertyData[0].city }}
+        {{ propertyData[0].state }}</b><br></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Details</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        Year Built: {{ propertyData[0].yearBuilt}}<br>
+        Lot Size: {{ propertyData[0].lotSizeSqFt}} Sq. Ft<br>
+        House Size: {{ propertyData[0].finishedSqFt}} Sq. Ft<br>
+        Type: {{ propertyData[0].useCode}}<br>
+      </div>
+      <div class="col-md-6">
+        Bedroom(s): {{ propertyData[0].bedrooms }}<br>
+        Bathroom(s): {{ propertyData[0].bathrooms }}<br>
+        Rooms: {{ propertyData[0].numRooms }}<br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Description</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <i>{{ propertyData[0].description }}</i>
+      </div>
+    </div>
+
+</div>
+</div>

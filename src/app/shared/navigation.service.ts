@@ -5,9 +5,13 @@ export class NavigationService {
   coordsChanged = new Subject<number[]>();
   markerCoordsChange = new Subject<number[]>();
   locationChanged = new Subject<string>();
+  propertyAddrChanged = new Subject<string>();
+  propertyZipChanged = new Subject<string>();
 
   coords = [];
   location: string;
+  propertyAddress: string;
+  propertyZip: string;
 
   enterExpandedView(string){
     this.whichExpandedView.next(string);
@@ -47,5 +51,26 @@ export class NavigationService {
   }
   resetViews(){
     this.whichExpandedView.next('');
+  }
+  setPropertyAddress(prop) {
+    this.propertyAddress = prop;
+    this.propertyAddrChanged.next(this.propertyAddress);
+  }
+  setPropertyZip(place) {
+    let tempArray = [];
+    for (let data of place.address_components) {
+      if(data['types'][0] === 'locality'){
+        tempArray.push(data.long_name);
+      }
+      if(data['types'][0] === 'administrative_area_level_1'){
+        tempArray.push(data.long_name);
+      }
+      if(data['types'][0] === 'postal_code'){
+        tempArray.push(data.long_name);
+      }
+    }
+
+    this.propertyZip = tempArray.join(' ');
+    this.propertyZipChanged.next(this.location);
   }
 }
