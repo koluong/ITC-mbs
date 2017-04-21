@@ -79,6 +79,12 @@ Our web application displays the information into three different views in order
 ## System Analysis and design
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/leaf-map-system.png "Leaf-Map Data Flow")
 
+### Hosting and Framework
+Our application, complied by the Angular CLI, is hosted on an Amazon Web Services S3 bucket. Angular provides Single Page Application functionality so we are able to set the `index.html` as the index document within our static web hosting. We enable our CORS policy that allows resources to be requested from another domain.
+
+### Data Flow
+
+
 ## Technical Documentation
 
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/angular.png "Angular")
