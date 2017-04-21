@@ -43,6 +43,7 @@ In web development, a mashup extracts content from different sources, aggregates
 ### User Interface
 
 ####    Search bar
+
    Users can search for a specific location through Google Maps autocomplete function. This address contains the parameters for the other requests.
 
 #### Map
@@ -56,7 +57,9 @@ Our web application displays the information into three different views in order
 
 **The views in the order of general to specific:**
 1. Preview Pane *(Displayed Automatically)*
+
    lkj
+
 2. Expanded View
 3. Detailed View
 
