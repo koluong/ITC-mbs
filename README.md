@@ -47,9 +47,9 @@ Our web application displays the information into three different views:
 |                    | Preview Pane                    | Expanded View | Detailed View |
 | :----------------- | :------------------------------ | :------------------------------------------------------------------------------------------ | :------------ |
 | **Weather**        |
-| **Restaurants**    | The two closest restaurant.     | A list of restaurants sorted by shortest distance from the user-entered location.           |
-| **Places**         | The two closest places.         | A list of places sorted by shortest distance from the user-entered location.                |
-| **Transportation** | The two closest transportation. | A list of public transportation sorted by shortest distance from the user-entered location. |
+| **Restaurants**    | The two closest restaurants        | A list of restaurants sorted by shortest distance from the user-entered location.           |
+| **Places**         | The two closest points of interest | A list of places sorted by shortest distance from the user-entered location.                |
+| **Transportation** | The two closest transportation     | A list of public transportation sorted by shortest distance from the user-entered location. |
 
 - What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
 - How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
