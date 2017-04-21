@@ -77,6 +77,7 @@ Our web application displays the information into three different views in order
 
 
 ## System Analysis and design
+![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/leaf-map-system.png "Leaf-Map Data Flow")
 
 ## Technical Documentation
 
