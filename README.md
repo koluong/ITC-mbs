@@ -24,14 +24,15 @@ This documentation analyzes and illustrates the application and the characterist
 
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which may include but are not limited the following:
 
-| Result         | Parameters             | Description                                                         |
-| -------------- | ---------------------- | ------------------------------------------------------------------- |
-| Map            | Longitude and Latitude | Displays an instance of Google Maps from the user-entered location. |
-| About          |
-| Weather        |
-| Restaurants    |
-| Places         |
-| Transportation |
+| Result         | Parameters             | Description                                                          |
+| -------------- | ---------------------- | -------------------------------------------------------------------- |
+| Map            | Longitude and Latitude | Generates an instance of Google Maps from the user-entered location. |
+| About          | City and State         |
+| Weather        | Longitude and Latitude |
+| Restaurants    | City and State         |
+| Places         | City and State         |
+| Transportation | City and State         |
+
 - What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
 - How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
 - How safe is this area, such as crime-related information?
