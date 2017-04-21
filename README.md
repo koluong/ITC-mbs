@@ -1,6 +1,5 @@
 # Leaf-Map [Software Documentation]
 Before you move to a new place, it would be useful to know the neighborhood, and it would be wonderful if most of the desired information can be aggregated and found in just one website.
-Mashup web application that displays desired aggregate information about different neighborhoods.
 
 ### Abstract
 Leaf-Map is a mashup web application that displays aggregate information about different neighborhoods. In just one search through Leaf-Map, the user is able to get information that would usually require different searches or visits to multiple websites.
