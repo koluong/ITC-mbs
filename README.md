@@ -32,7 +32,7 @@ In web development, a mashup extracts content from different sources, aggregates
 | **Places**         | City and State         | A list of nearby establishments, geographical locations, or prominent points of interest.            |
 | **Transportation** | Longitude and Latitude | A list of nearby public transportation including planes, buses and trains.                           |
 
-### Additional Notes
+### Requirements - Additional Notes
 
 - The access to the data must be free. Sources that have free trials or a limited time access are not considered a free source.
 - Sources that provide free but limited access are okay to be used. Some of the free sources require creation of a free account.
@@ -57,16 +57,7 @@ Our web application displays the information into three different views in order
 | **Places**         | The two closest points of interest. Includes rating.    | A list of places sorted by shortest distance from the user-entered location. Includes full address and open status.                       | The selected places. Includes phone number, hours of operations, website and reviews.         |
 | **Transportation** | The two closest public transportation.                  | A list of public transportation sorted by shortest distance from the user-entered location. Includes full address and open status | The selected transportation. Includes phone number, hours of operations and website.          |
 
-- What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
-- How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
-- How safe is this area, such as crime-related information?
-- What is the weather in the next few days and year around?
-- What nearby properties are currently on the market for sale and what are their
-attributes, such as numbers of bedroom and bathroom, sizes of living space, lot sizes,
-listing prices, years built, distances to the given location, etc.
-- What nearby properties are currently on the market for rent and what are their
-attributes, such as numbers of bedroom and bathroom, sizes of living space, rental rates, distances to the given location, etc.
-
+### Application Features - Additional Notes
 
 
 ## System Analysis and design
