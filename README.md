@@ -4,21 +4,21 @@ Before you move to a new place, it would be useful to know the neighborhood, and
 ### Abstract
 Leaf-Map is a mashup web application that displays aggregate information about different neighborhoods. In just one search through Leaf-Map, the user is able to get information that would usually require different searches or visits to multiple websites.
 
+### Executive Summary
+
+
+
 # [Software Documentation]
 
 ### Content
 This documentation analyzes and illustrates the application and the characteristics of the system, the following will be discussed:
-1. [Executive Summary](#executive-summary)
-2. [Requirements](#requirements)
-3. [Application Features](#application-features)
-4. [System Analysis and Design](#system-analysis-and-design)
-5. [Technical Documentation](#technical-documentation)
-6. [User Interface](#user-interface)
-7. [Development Plans](#development-plans)
-8. [Closing](#closing)
-
-## Executive Summary
-
+1. [Requirements](#requirements)
+2. [Application Features](#application-features)
+3. [System Analysis and Design](#system-analysis-and-design)
+4. [Technical Documentation](#technical-documentation)
+5. [User Interface](#user-interface)
+6. [Development Plans](#development-plans)
+7. [Closing](#closing)
 
 ## Requirements
 
