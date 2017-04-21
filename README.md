@@ -114,7 +114,9 @@ We needed a weather API that handles request for the current and future weather.
 Wikipedia is built on top of MediaWiki API. This provides a convenient way to access wiki features, data, and meta-data returned in JSON format.
 - *MediaWiki is open source software and free to use*
 
-### [Amazon S3](https://aws.amazon.com/s3/)
+### [Amazon Web Services S3](https://aws.amazon.com/s3/)
+The S3 bucket allows us the host our single page application with ease on AWS. It is a convenient way to store cloud-native applications like websites with a simple interface to configure CORS and bucket policy.
+- *Amazon S3 offers a free tier entailing 5GB of S3 storage, 20,000 GET and 2,000 PUT requests per month*
 
 ## Future Development Plans
 
