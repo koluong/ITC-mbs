@@ -20,7 +20,7 @@ This documentation analyzes and illustrates the application and the characterist
 
 ## Requirements
 
-In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which may include but are not limited the following:
+In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which include the following:
 
 | Result         | Parameters             | Description                                                                                          |
 | -------------- | ---------------------- | ---------------------------------------------------------------------------------------------------- |
