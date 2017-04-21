@@ -43,7 +43,8 @@ attributes, such as numbers of bedroom and bathroom, sizes of living space, rent
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/darksky.png "Dark Sky")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/wikipedia.jpg "Wikipedia")
 
-### [Angular](https://angular.io)
+1. [Angular](https://angular.io)
+We use Angular
 
 ## User Interface
 
