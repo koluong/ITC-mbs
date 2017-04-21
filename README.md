@@ -119,4 +119,6 @@ The S3 bucket allows us the host our single page application with ease on AWS. I
 
 ## Closing
 
+### Things We Learned
+
 ### Future Development Plans
