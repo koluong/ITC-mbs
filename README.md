@@ -17,8 +17,7 @@ This documentation analyzes and illustrates the application and the characterist
 2. [Application Features](#application-features)
 3. [System Analysis and Design](#system-analysis-and-design)
 4. [Technical Documentation](#technical-documentation)
-5. [Future Development Plans](#future-development-plans)
-6. [Closing](#closing)
+5. [Closing](#closing)
 
 
 ## Requirements
@@ -68,7 +67,7 @@ Our web application displays the information into three different views in order
 
 |                    | Preview Pane                          | Expanded View                                                                               | Detailed View |
 | :----------------- | :------------------------------------ | :------------------------------------------------------------------------------------------ | :------------ |
-| **Weather**        | The current and two day weather forecast.               |
+| **Weather**        | The current and two day weather forecast.               | Detailed information including precipitation chances, humidity levels, description and hourly and five day forecast.             | *N/A*
 | **Restaurants**    | The two closest restaurants. Includes rating.           | A list of restaurants sorted by shortest distance from the user-entered location. Includes full address and open status.             | The selected restaurant. Includes phone number, hours of operations, website and reviews.     |
 | **Places**         | The two closest points of interest. Includes rating.    | A list of places sorted by shortest distance from the user-entered location. Includes full address and open status.                       | The selected places. Includes phone number, hours of operations, website and reviews.         |
 | **Transportation** | The two closest public transportation.                  | A list of public transportation sorted by shortest distance from the user-entered location. Includes full address and open status | The selected transportation. Includes phone number, hours of operations and website.          |
@@ -118,7 +117,6 @@ Wikipedia is built on top of MediaWiki API. This provides a convenient way to ac
 The S3 bucket allows us the host our single page application with ease on AWS. It is a convenient way to store cloud-native applications like websites with a simple interface to configure CORS and bucket policy.
 - *Amazon S3 offers a free tier entailing 5GB of S3 storage, 20,000 GET and 2,000 PUT requests per month*
 
-## Future Development Plans
-
-
 ## Closing
+
+### Future Development Plans
