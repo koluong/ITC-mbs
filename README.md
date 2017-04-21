@@ -5,7 +5,14 @@ Mashup web application that displays desired aggregate information about differe
 ### Abstract
 Leaf-Map is a mashup web application that displays aggregate information about different neighborhood. Getting information that would usually take visits to multiple sites or take different searches is handled in just one search through Leaf-Map.
 
-This documentation analyzes and illustrates the application and the characteristics of the system
+This documentation analyzes and illustrates the application and the characteristics of the system, the following will be discussed:
+1. [Executive Summary](#)
+2. [Requirements](#requirements)
+3. [Features](#)
+4. [Technologies](#)
+5. [Unbelievable Yet Plausible Food Facts](#)
+6. [Development Plans](#)
+7. [Closing](#)
 
 ## Requirements
 In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, you develop a mashup web application that uses a location, such as an address, as input, combines information from different free sources, and displays various results which may include but are not limited the following:
