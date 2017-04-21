@@ -11,8 +11,9 @@ This documentation analyzes and illustrates the application and the characterist
 3. [Application Features](#application-features)
 4. [System Analysis and Design](#system-analysis-and-design)
 5. [Technical Documentation](#technical-documentation)
-6. [Development Plans](#development-plans)
-7. [Closing](#closing)
+6. [User Interface](#user-interface)
+7. [Development Plans](#development-plans)
+8. [Closing](#closing)
 
 ## Executive Summary
 
@@ -41,6 +42,9 @@ attributes, such as numbers of bedroom and bathroom, sizes of living space, rent
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/googlemaps.png "Google Maps")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/darksky.png "Dark Sky")
 ![Alt text](https://raw.github.com/koluong/ITC-mbs/master/src/assets/wikipedia.jpg "Wikipedia")
+
+
+## User Interface
 
 ## Development Plans
 
