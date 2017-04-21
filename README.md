@@ -8,7 +8,7 @@ Leaf-Map is a mashup web application that displays aggregate information about d
 
 
 
-# [Software Documentation]
+# Software Documentation
 
 ### Content
 This documentation analyzes and illustrates the application and the characteristics of the system, the following will be discussed:
@@ -43,7 +43,7 @@ In web development, a mashup extracts content from different sources, aggregates
 
 ### Viewed Information and Data
 
-Our web application displays the information into three different views:
+Our web application displays the information into three different views in order to deliver information to the user. Initially, only the preview pane of each result is displayed. If the user wants a more detailed information they can navigate further through the desired result and view more information about their selection.
 
 |                    | Preview Pane                          | Expanded View                                                                               | Detailed View |
 | :----------------- | :------------------------------------ | :------------------------------------------------------------------------------------------ | :------------ |
