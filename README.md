@@ -55,6 +55,9 @@ Google Maps and Google Places provides web services in generating the map and re
 We needed a weather API that handles request for the current and future weather. Dark Sky fulfills both of these while providing minute-by-minute weather forecast in JSON format.
 - *Using Dark Sky API is free for the first 1000 requests per day*
 
+### [MediaWiki](https://www.mediawiki.org/wiki/API:Main_page)
+Wikipedia is built on top of MediaWiki API. This provides a convenient way to access wiki features, data, and meta-data returned in JSON format.
+- *MediaWiki is open source software and free to use*
 
 ## User Interface
 
