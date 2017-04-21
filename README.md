@@ -19,8 +19,14 @@ This documentation analyzes and illustrates the application and the characterist
 
 
 ## Requirements
-In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, you develop a mashup web application that uses a location, such as an address, as input, combines information from different free sources, and displays various results which may include but are not limited the following:
 
+
+
+In web development, a mashup extracts content from different sources, aggregates the content, and displays enriched results. In this project, a mashup web application is developed to use a location, such as an address, as input, combining information from different free sources, and displays various results which may include but are not limited the following:
+
+| Result  | Parameters             | Description                                                         |
+| ------- | ---------------------- | ------------------------------------------------------------------- |
+| Map     | Longitude and Latitude | Displays an instance of Google Maps from the user-entered location.
 
 - What amenities (such as restaurants, grocery stores, superstores, fitness centers, banks, parks, schools, universities, libraries, post office, etc.) are nearby the particular location? What are their distances to the location and their ratings and reviews if applicable?
 - How convenient is this location to major public transportations, such as distances to nearby highways, subway or train stations, airports, etc.?
