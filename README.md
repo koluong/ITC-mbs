@@ -24,7 +24,6 @@ This documentation analyzes and illustrates the application and the characterist
 2. [Application Features](#application-features)
 3. [System Analysis and Design](#system-analysis-and-design)
 4. [Technical Documentation](#technical-documentation)
-5. [Closing](#closing)
 
 
 ## Requirements
@@ -121,9 +120,3 @@ Wikipedia is built on top of MediaWiki API. This provides a convenient way to ac
 ### [Amazon Web Services S3](https://aws.amazon.com/s3/)
 The S3 bucket allows us the host our single page application with ease on AWS. It is a convenient way to store cloud-native applications like websites with a simple interface to configure CORS and bucket policy.
 - *Amazon S3 offers a free tier entailing 5GB of S3 storage, 20,000 GET and 2,000 PUT requests per month*
-
-## Closing
-
-### Things We Learned
-
-### Future Development Plans
