@@ -4,7 +4,7 @@ Before you move to a new place, it would be useful to know the neighborhood, and
 *Leaf-Map web-app is hosted on an S3 bucket. Click the link to visit.*  
   [Leaf-Map](http://itc-leaf-map.s3-website-us-west-1.amazonaws.com/)
 
-*ITC keynote presentation. Click the link to visit.* 
+*ITC keynote presentation. Click the link to visit.*   
     [Leaf-Map Keynote](https://www.icloud.com/keynote/0iX_qJC82v5v50P-bAJo0PQWA#Leaf-Map-ITC)
 
 ### Abstract
