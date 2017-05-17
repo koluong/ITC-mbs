@@ -5,7 +5,7 @@ Before you move to a new place, it would be useful to know the neighborhood, and
   [Leaf-Map](http://itc-leaf-map.s3-website-us-west-1.amazonaws.com/)
 
 *ITC keynote presentation. Click the link to visit.* 
-  [Leaf-Map Keynote](https://www.icloud.com/keynote/0iX_qJC82v5v50P-bAJo0PQWA#Leaf-Map-ITC)
+    [Leaf-Map Keynote](https://www.icloud.com/keynote/0iX_qJC82v5v50P-bAJo0PQWA#Leaf-Map-ITC)
 
 ### Abstract
 Leaf-Map is a mashup web application that displays aggregate information about different neighborhoods. In just one search through Leaf-Map, the user is able to get information that would usually require different searches or visits to multiple websites.
