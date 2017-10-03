@@ -51,6 +51,9 @@ In web development, a mashup extracts content from different sources, aggregates
 
 ### User Interface
 
+*Application wireframe. Click the link to visit.*   
+    [Leaf-Map Wireframe](https://www.lucidchart.com/invitations/accept/3591ba43-e417-48eb-843b-66e7311a4cad)
+
  - **Search bar**
 
    Users can search for a specific location through Google Maps autocomplete function. This address contains the parameters for the other requests.
